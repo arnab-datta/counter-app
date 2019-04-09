@@ -5,28 +5,30 @@ class Counter extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col-1">
-            <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+          <div className="col-md-1">
+            <span style={{ fontSize: 24 }} className={this.getBadgeClasses()}>
+              {this.formatCount()}
+            </span>
           </div>
-          <div className="col">
+          <div className="col-md-4">
             <button
-              className="btn btn-secondary btn-sm"
+              className="btn btn-secondary"
               onClick={() => this.props.onIncrement(this.props.counter)}
             >
-              +
+              <i className="fa fa-plus-circle" aria-hidden="true" />
             </button>
             <button
-              className="btn btn-secondary btn-sm m-2"
+              className="btn btn-info m-2"
               onClick={() => this.props.onDecrement(this.props.counter)}
               disabled={this.props.counter.value === 0 ? "disabled" : ""}
             >
-              -
+              <i className="fa fa-minus-circle" aria-hidden="true" />
             </button>
             <button
-              className="btn btn-danger btn-sm"
+              className="btn btn-danger"
               onClick={() => this.props.onDelete(this.props.counter.id)}
             >
-              X
+              <i className="fa fa-trash-o" aria-hidden="true" />
             </button>
           </div>
         </div>

@@ -6,7 +6,7 @@ const NavBar = ({ totalCounters }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand">
-        Total{" "}
+        <i class="fa fa-shopping-cart fa-lg m-2" aria-hidden="true" />
         <span className="badge badge-pill badge-secondary">
           {totalCounters}
         </span>
