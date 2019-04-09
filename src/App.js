@@ -42,6 +42,10 @@ class App extends Component {
     this.setState({ counters });
   };
 
+  handleRestart = () => {
+    window.location.reload();
+  };
+
   render() {
     return (
       <div>
@@ -55,6 +59,7 @@ class App extends Component {
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
+            onRestart={this.handleRestart}
           />
         </main>
       </div>
