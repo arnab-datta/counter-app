@@ -13,7 +13,11 @@ class Counters extends Component {
     } = this.props;
     return (
       <div>
-        <button className="btn btn-success m-2" onClick={onReset}>
+        <button
+          className="btn btn-success m-2"
+          onClick={onReset}
+          disabled={counters.length === 0 ? "disabled" : ""}
+        >
           <i className="fa fa-refresh" aria-hidden="true" />
         </button>
         <button
