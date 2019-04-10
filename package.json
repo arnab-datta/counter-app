@@ -2,6 +2,7 @@
   "name": "counter-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://arnab-datta.github.io/counter-app",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
