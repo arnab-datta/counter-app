@@ -45,7 +45,7 @@ class App extends Component {
   handleDelete = counterId => {
     const counters = this.state.counters.filter(c => c.id !== counterId);
     let total = 0;
-    counters.map(c => {
+    counters.forEach(c => {
       total = total + c.value;
     })
     this.setState({ counters, total });
