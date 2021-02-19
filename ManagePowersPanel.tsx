@@ -13,23 +13,21 @@ import {
 } from '@material-ui/core';
 
 interface IProps {
-  modelTypeNames: Array<string>;
-  handleConfirm: (modelType:string, instanceName:string) => void;
+  powerData: any;
+  handleConfirm: (selectedPowers:any) => void;
   handleClose: () => void;
 }
 
 interface IState {
-   instanceName: string;
-   modelType: string
+   selectedPowers: any; //int array?
 }
 
-export default class CreateDatastorePanel extends React.Component<IProps, IState> {
+export default class ManagePowersPanel extends React.Component<IProps, IState> {
 
     constructor(props:IProps) {
         super(props);
         this.state = {
-                        instanceName: "",
-                        modelType: ""
+                        selectedPowers: ""
                      };
 
         this.handleInstanceNameChange = this.handleInstanceNameChange.bind(this);
