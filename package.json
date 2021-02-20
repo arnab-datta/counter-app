@@ -8,6 +8,7 @@
     "npm": "6.7.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
