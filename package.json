@@ -1,12 +1,12 @@
 {
-  "name": "counter-app",
+  "homepage": "http://aburnettt.github.io/adxsheets",
+  "name": "adxsheets",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": "11.10.0",
     "npm": "6.7.0"
   },
-  "homepage": "https://arnab-datta.github.io/counter-app",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +33,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "> **Made by Al, a Hero to all**",
+  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aburnettt/adxsheets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aburnettt/adxsheets/issues"
+  }
 }
