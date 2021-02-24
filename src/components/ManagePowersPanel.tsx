@@ -15,8 +15,8 @@ import {
 
 
 interface IProps {
-  powerData: {};
-  selectedPowers: {};
+  powerData: any[];
+  selectedPowers: any[];
   handleConfirm: (selectedPowers:any) => void;
   handleClose: () => void;
 }
@@ -65,22 +65,19 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
                     onChange={this.calculateRemainingCP}
                     className="total-cp-input"
                 />
-                  {//this.props.powerData && 
-                     
+                  {/*
+                    <div><pre>{JSON.stringify(this.props.powerData, null, 2) }</pre></div>     
+                   */
                   }
-                <div><pre>{JSON.stringify(this.props.powerData, null, 2) }</pre></div>
+                
                 
                 </FormControl>
                 <FormControl className="inputControl">
                 
-                  {/* todo - render rows
-                  
-                  
-                  this.props.powerData && this.props.powerData.map((modelTypeName: string) => {
-                    return (
-                      <MenuItem key={modelTypeName} value={modelTypeName}>{modelTypeName}</MenuItem>
-                    );
-                  })*/}
+                  {this.props.powerData && this.props.powerData.map((row) =>
+                  <li>{row["Power"]}</li>
+                  )
+                  }
                 
                 
                 </FormControl>

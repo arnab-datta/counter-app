@@ -6,7 +6,7 @@ import { flattenDiagnosticMessageText } from "typescript";
 interface IState {
   showManagePowersPanel: boolean;
   selectedPowers: any; //number array?
-  powerData: {}
+  powerData: any[]
 }
 
 interface IProps {
@@ -20,7 +20,7 @@ export default class App extends React.Component<IProps, IState> {
     this.state = {
         showManagePowersPanel: false,
         selectedPowers: "",
-        powerData: {}
+        powerData: []
     }
 
   }
@@ -105,7 +105,7 @@ public csvToJson(csv: string){
 
   }
   
-  //return result; //JavaScript object
-  return JSON.stringify(result); //JSON
+  return result;
+  //return JSON.stringify(result); //JSON
 }
 }
