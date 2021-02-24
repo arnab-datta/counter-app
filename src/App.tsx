@@ -27,7 +27,7 @@ export default class App extends React.Component<IProps, IState> {
 
   componentDidMount() {
 
-    fetch("./data/powers.csv")
+    fetch("https://raw.githubusercontent.com/aburnettt/adxsheets/master/src/data/powers.csv")
       .then((r) => r.text())
        .then(text  => {
          this.setState({

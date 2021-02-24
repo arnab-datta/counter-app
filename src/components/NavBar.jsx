@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from '@material-ui/core';
-import ManagePowersPanel from "./components/ManagePowersPanel";
-
+import ManagePowersPanel from "./ManagePowersPanel";
 
 // Stateless Functional Component
 
