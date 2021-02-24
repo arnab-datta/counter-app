@@ -88,6 +88,8 @@ public csvToJson(csv: string){
 
   var result = [];
 
+  //todo would be nice to support commas in data
+  //by skipping escaped commas
   var headers=lines[0].split(",");
 
   for(var i=1;i<lines.length;i++){
