@@ -4,8 +4,8 @@ import ManagePowersPanel from "./components/ManagePowersPanel";
 import { flattenDiagnosticMessageText } from "typescript";
 
 interface IState {
-  showManagePowersPanel: boolean;
-  selectedPowers: any; //number array?
+  showManagePowersPanel: boolean
+  selectedPowers: any //number array?
   powerData: any[]
 }
 
