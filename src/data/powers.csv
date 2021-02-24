@@ -1,18 +1,18 @@
 Power,Row,Action Type,r0,r1,r2,r3,r4,r5,Effect,Tags,Conditions,Detail,Major,Minor,Lesser,Lore
-Active Healing,Ability,Primary Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Heal,heal,,"If the Hero is at full HP, he can heal a missing limb over a Long Rest",35,25,14,The Hero can regenerate his wounds as an action.
-Adaptive Skin,Buff,,2,4,5,7,10,15,DS,ds,adapted to damage type,"Whenever the Hero incurs damage, he may adapt to that damage type, gaining a bonus to Natural DS.
+Active Healing,Ability,Primary Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Heal,heal,,If the Hero is at full HP. he can heal a missing limb over a Long Rest,35,25,14,The Hero can regenerate his wounds as an action.
+Adaptive Skin,Buff,,2,4,5,7,10,15,DS,ds,adapted to damage type,"Whenever the Hero incurs damage. he may adapt to that damage type. gaining a bonus to Natural DS.
 This bonus remains in effect until the Hero chooses to drop the resistance.
 The Hero may elect to drop the resistance at any time.
-If the Hero incurs damage from a different damage type, he may elect to switch resistance to this new damage type.
+If the Hero incurs damage from a different damage type. he may elect to switch resistance to this new damage type.
 The switch occurs at the conclusion of the instance.
-While a resistance is up, the Hero has the NHL trait.
-Each resistance has a unique visibility marker, identifying to the world which resistance is currently active.
+While a resistance is up. the Hero has the NHL trait.
+Each resistance has a unique visibility marker. identifying to the world which resistance is currently active.
 Player & GM work together to determine the specifics.
 ",,,,
 Adaptive Skin,Ability,Flash,,,,,,,Adapt,,after taking damage,Adapt to the damage type (physical / elemental / toxic) ,20,14,8,
-Adjust Weight,Ability,See Detail,1,1,2,3,4,5,Object Size Change (+/-),,,"Works on physical objects, both organic and inorganic.
+Adjust Weight,Ability,See Detail,1,1,2,3,4,5,Object Size Change (+/-),,,"Works on physical objects. both organic and inorganic.
 The power allows the Hero to alter the Object Size of any object. 
-Once altered, the object operates at that Object Size for 1hour.
+Once altered. the object operates at that Object Size for 1hour.
 Action to Alter Weight:
 r0: 1rnd Channel
 r1: Action
@@ -24,8 +24,8 @@ Cannot use any limbs while in ball form
 DS +2 while in ball form
 Hero is blind while in ball form
 ",6,,,
-Armadillo Ball,Buff,,2,,,,,,"DS, blind, shrink",,,,,,,
-Audio Mimicry,Buff,,,,,,,,Mimic any sound,,,"The Hero can mimic any voice, generate any sound, or play any music he desires. Max volume is about the same as a human full yell
+Armadillo Ball,Buff,,2,,,,,,DS. blind. shrink,,,,,,,
+Audio Mimicry,Buff,,,,,,,,Mimic any sound,,,"The Hero can mimic any voice. generate any sound. or play any music he desires. Max volume is about the same as a human full yell
 The Hero can perfectly imitate any sound he has heard only once
 The Hero can speak freely in someone else's voice if he has heard them speak a few sentences
 ",4,,,
@@ -33,7 +33,7 @@ Bark Armor,,Primary Action,0,0,2,4,6,10,Starting HP,,,,25,18,10,
 Bark Armor,,,2,6,10,15,20,30,Max HP,,,"Action activates Bark Armor
 Starting HP based on rank
 Bark Armor regens on upkeep
-Cannot exceed Max HP, defined by rank
+Cannot exceed Max HP. defined by rank
 Action to activate/deactivate
 ",,,,Armor that grows more powerful over time
 Bark Armor,,,1,1,1,2,2,3,Regen HP,,,,,,,
@@ -41,10 +41,10 @@ Big Mitts,,Passive,,,,,,,,,,"Upgrade Unarmed Melee attack
 +2 Grip checks
 Unable to manipulate small items (smaller than a banana). It's like wearing very heavy gloves. 
 Hero cannot pass for a human without disguising or hiding the hands somehow
-",5,,,"Big, gorilla-like hands that hit hard, grip well, and look ridiculous"
-Biological Redundancy,,Passive,,,,,,,,,,+5 Max HP,8,,,"The Hero’s body develops redundant systems, allowing him to survive damage that would take a normal human out of commission."
+",5,,,Big. gorilla-like hands that hit hard. grip well. and look ridiculous
+Biological Redundancy,,Passive,,,,,,,,,,+5 Max HP,8,,,The Hero’s body develops redundant systems. allowing him to survive damage that would take a normal human out of commission.
 Biotoxin,,Passive,1,1,1,2,2,3,DMG per counter,,,"Applied to all unarmed melee strikes  Poisoned Attacks add a Neurotoxin counter if the target loses HP.
-On upkeep, poisoned targeted make a CON check:
+On upkeep. poisoned targeted make a CON check:
 Pass: Remove Biotoxin counters;
 Fail: Take Biotoxin damage for each Biotoxin counter.
 ",10,,,
@@ -52,35 +52,35 @@ Biotoxin,,,7,8,9,15,20,30,DC,,,,,,,
 Bound,,Move,0,2,3,4,5,6,Movement Bonus,,,"Movement bonus applies to AGI movement
 Can move vertically
 ",15,N/A,N/A,The hero can bound around the battlefield like a lemur
-Breathless,,Passive,,,,,,,,,,"The Hero doesn’t need to breathe. He is immune to asphyxiation, drowning, choking, etc.
-The hero still has working lungs and may breathe voluntarily, however, he will not breathe automatically
+Breathless,,Passive,,,,,,,,,,"The Hero doesn’t need to breathe. He is immune to asphyxiation. drowning. choking. etc.
+The hero still has working lungs and may breathe voluntarily. however. he will not breathe automatically
 This makes him effectively immune to airborne effects
 ",1,,,
-Burrow,,Primary Action,2,6,8,10,12,14,Movement,,,"As a PA, the Hero can burrow underground in all but the most unwelcoming terrain. 
-Once underground, Burrow provides a PA movement ability which allows him to move in any direction.
+Burrow,,Primary Action,2,6,8,10,12,14,Movement,,,"As a PA. the Hero can burrow underground in all but the most unwelcoming terrain. 
+Once underground. Burrow provides a PA movement ability which allows him to move in any direction.
 ",5,,,
 Claws,,Flash,,,,,,,,,,"Extend/Retract Claws
 Flash
 While Claws are extended: Upgrade Melee Dice
-If the Hero selects the (Toxic) version, the Hero can select one Toxin. 
+If the Hero selects the (Toxic) version. the Hero can select one Toxin. 
 Claws deliver the chosen Toxin.
 ",5,,,
 Cleanse,,Primary Action,2,5,10,25,50,75,Range (m),,,"Radial AoE; Hero is the epicenter. All targets in range may make a CON Check + Cleanse CON bonus. 
 This check roll may shed Toxin effects.
-At r0, Cleanse heals all human (i.e, non-super powered) ailments and poisoning.
+At r0. Cleanse heals all human (i.e. non-super powered) ailments and poisoning.
 ",14,10,6,The Hero rids allies of poisons and toxins
 Cleanse,,,7,9,10,11,13,17,CON Bonus,,,,,,,
 Cocoon,,Primary Action - Channel,,,,,,,,,,"The Hero encloses himself in a cocoon.
 Cocoon has 5HP
-Until the cocoon is destroyed or the Hero emerges, he is in a deep sleep, unable to see, hear, or act.
-After 5 rounds, The Hero emerges, recovering from all HP loss, lost limbs, ailments, and fatigue, but very hungry.
+Until the cocoon is destroyed or the Hero emerges. he is in a deep sleep. unable to see. hear. or act.
+After 5 rounds. The Hero emerges. recovering from all HP loss. lost limbs. ailments. and fatigue. but very hungry.
 The Hero can prematurely emerge as a Flash
-If the cocoon is destroyed before the Hero emerges, he recovers nothing and is knocked down.
+If the cocoon is destroyed before the Hero emerges. he recovers nothing and is knocked down.
 ",10,,,
 Combustion,,,,,,,,,,,,,30,21,12,The Hero can use fiery blasts to propel himself with explosive movement
-Blast-Off!,,Flash,3,5,6,7,8,9,Distance,,,"May only move in a Straight line, but may move in any direction including vertically.
+Blast-Off!,,Flash,3,5,6,7,8,9,Distance,,,"May only move in a Straight line. but may move in any direction including vertically.
 The Hero must move the full distance of the Blast-Off! action.
-If the hero is the victim of a grapple and uses Blast-Off!, he uses the ""Escape Roll"" to make a Check. This acts the same as attempting to escape a grapple as an action.
+If the hero is the victim of a grapple and uses Blast-Off!. he uses the ""Escape Roll"" to make a Check. This acts the same as attempting to escape a grapple as an action.
 Grants “Quick Rise”
 R0 - Movement
 R2 - Flash
@@ -88,8 +88,8 @@ R4 - Free
 ",,,,The Hero triggers an explosion to instantly propel himself in any one direction (including vertically)
 Blast-Off!,,,1d20+4,1d20+8,1d20+10,1d20+12,1d20+14,1d20+16,Priority,,,,,,,
 Blast-Off!,,,1d6+5,3d6+5,4d6+5,5d6+5,6d6+5,7d6+5,Escape Roll,,,,,,,
-Propulsion,,Move,7,9,10,11,12,14,Distance,,,"May only move in a Straight line, but may move in any direction including vertically.",,,,The Hero uses blasts of fire to propel himself around the battlefield
-Fly,,Flash,-6,-5,-5,-4,-3,-2,EL Penalty,,,Grants Hover; Can be toggled on & off as a Flash,,,,"The Hero channels his explosive power as thrusters, allowing him to hover in place, albeit clumsily."
+Propulsion,,Move,7,9,10,11,12,14,Distance,,,May only move in a Straight line. but may move in any direction including vertically.,,,,The Hero uses blasts of fire to propel himself around the battlefield
+Fly,,Flash,-6,-5,-5,-4,-3,-2,EL Penalty,,,Grants Hover; Can be toggled on & off as a Flash,,,,The Hero channels his explosive power as thrusters. allowing him to hover in place. albeit clumsily.
 Store/Maintain Energy,,Primary Action,2,3,4,4,5,6,Meters per Charge,,,"The Hero spends PA to Store/Maintain “movement energy”
 Can move vertically.
 Cannot exceed Max Charges.The energy dissipates in 1rnd unless the Hero spends another PA to Store/Maintain
@@ -97,7 +97,7 @@ Spending PA gains Charges.
 ",10,7,4,The Hero stores up “movement energy” to expend it in a single burst.
 Store/Maintain Energy,,,6,9,12,14,16,20,Max Charges,,,,,,,
 Expend Energy,,Flash,,,,,,,,,,"The Hero spends a Flash to expend all “movement energy” 
-Grants “Quick Rise” as a Flash, assuming the Hero has movement energy
+Grants “Quick Rise” as a Flash. assuming the Hero has movement energy
 ",,,,
 Corrosive Bile,,Primary Action,1,1,2,2,3,5,DS Reduction,,,"Hero launches a liquid corrosive substance with limited range
 A successful attack temporarily reduces the target's DS
@@ -106,10 +106,10 @@ Effect lasts 1 hour
 Drain Life,,Primary Action,1,1d4,1d6,1d6+2,2d6,2d6+3,DMG/Regen,,,"Lay on Hands
 Drain Life is a melee action that deals damage and hea
 ls the Hero by the same amount.
-Drain Life is made on contact with the target. As such, the Hero needs to make a successful ATK roll to touch the target.
-Drain Life requires direct contact with the target; however, Clothes/Armor do not prevent draining unless specifically stated.
+Drain Life is made on contact with the target. As such. the Hero needs to make a successful ATK roll to touch the target.
+Drain Life requires direct contact with the target; however. Clothes/Armor do not prevent draining unless specifically stated.
 Only regens HP
-(e.g., does not cure ailments, regrow limbs)
+(e.g.. does not cure ailments. regrow limbs)
 ",20,14,8,
 Duping,,Primary Action - Channel,,,,,,,,,,"Start-up: 2rnds
 Cooldown: 1rnd
@@ -117,22 +117,22 @@ Split into 2 exact copies of yourself
 All Dupes share experiences and senses
 There is no “true” version
 The Hero controls all Dupes
-Each Dupe maintains the same current:max HP, same powers, status ailments as before the Split.
+Each Dupe maintains the same current:max HP. same powers. status ailments as before the Split.
 Additional modifications to one does not affect the others. 
-Whenever a Dupe is KO’d, killed, or Banished, the max number of Dupes you can create is reduced by 1. 
+Whenever a Dupe is KO’d. killed. or Banished. the max number of Dupes you can create is reduced by 1. 
 This penalty lasts for 1 hour.
 Items held by the Hero are duplicated.
-Spells, Finite Powers are duplicated.",50,N/A,N/A,"The Hero is a big, stupid, idiot. And now there's two of them. "
+Spells. Finite Powers are duplicated.",50,N/A,N/A,The Hero is a big. stupid. idiot. And now there's two of them. 
 Merge,,Primary Action - Channel,,,,,,,,,,"Start-up: 1rnd
 Cooldown: 1rnd
 One Dupe can merge with any other number of Dupes in Melee Range
-The remaining Dupe, determined by the player, retains the “best parts” of the merged clones
+The remaining Dupe. determined by the player. retains the “best parts” of the merged clones
 Highest HP
-Fewest, least harmful Status Ailments
+Fewest. least harmful Status Ailments
 etc...
 ",,,,
 Banish,,Primary Action,,,,,,,,,,The Hero Banishes all other Dupes from existence.,,,,
-Eagle Eye,,Passive,,,,,,,,,,"The Hero can see twice as far, twice as clearly.
+Eagle Eye,,Passive,,,,,,,,,,"The Hero can see twice as far. twice as clearly.
 Doubles max shooting range.
 +2 ATK
 Precludes purchase of Falcon Eye
@@ -141,26 +141,26 @@ Elasticity,,Passive,,,,,,,,,,"The Hero is immune to Physical DMG
 +5 EL
 +10m Reach
 The “Reach” numbers denote the number of meters the Hero can stretch his body
-Stretching is not limited to the Hero's limbs. e.g., The Hero can stretch his arms as easily as he can stretch his neck.
+Stretching is not limited to the Hero's limbs. e.g.. The Hero can stretch his arms as easily as he can stretch his neck.
 Stretching implies a “flattening” of the stretched limb and/or body part. 
 ",50,N/A,N/A,
-Elemental Barrier,,Primary Action,1,3,5,7,9,15,Starting/Max HP,,,"When the Hero declares the Barrier, the Barrier forms at full HP.
+Elemental Barrier,,Primary Action,1,3,5,7,9,15,Starting/Max HP,,,"When the Hero declares the Barrier. the Barrier forms at full HP.
 The Barrier only blocks elemental damage.
-Non-elemental attacks and individuals may pass through the Barrier, unrestricted.
+Non-elemental attacks and individuals may pass through the Barrier. unrestricted.
 The size listed on the NP represents the size of the Force FIeld
 1 = 1 side of a hex
 The Force Field can extend to a max height of 10ft
 The Hero can choose the exact height.
 Any part of the Barrier effectively has 0 EL
-Barriers are “shimmery” and, as such, are visible.
-If LoS runs through the Barrier, the attack hits the Barrier.
-If LoS runs alongside the Barrier, the target is in “Full Cover”. A hit hits the target, a miss hits the Barrier.
-",10,7,4,"The Hero creates a barrier, preventing elemental damage from passing through"
+Barriers are “shimmery” and. as such. are visible.
+If LoS runs through the Barrier. the attack hits the Barrier.
+If LoS runs alongside the Barrier. the target is in “Full Cover”. A hit hits the target. a miss hits the Barrier.
+",10,7,4,The Hero creates a barrier. preventing elemental damage from passing through
 Energy Containment,,Passive,2,4,5,7,10,15,DMG Reduction,,,"DS applies to Physical & Elemental damage only.
-Energy Containment is always active, even when sleeping or KO’d
+Energy Containment is always active. even when sleeping or KO’d
 Purchasing this power grants one free Output Power. 
 The other Output powers may be purchased a la carte.
-If the Hero attains his Max MC limit, his is considered “Fully Charged”
+If the Hero attains his Max MC limit. his is considered “Fully Charged”
 Damage is not reduced while fully charged.  Ie the hero eats all damage while fully charged.
 The Hero can release any amount of Stored Energy as a Flash. This energy does not deal damage not cause any effect. 
 All stored energy is released upon KO
@@ -196,28 +196,28 @@ Extra-Flexible Joints,,Passive,,,,,,,,,,"‘+2 EL
 The effect is removed once the Hero takes damage.
 The effect recovers after one hour.
 ",8,,,
-Falcon Eye,,Passive,,,,,,,,,,"The Hero can see twice as far, twice as clearly.
+Falcon Eye,,Passive,,,,,,,,,,"The Hero can see twice as far. twice as clearly.
 Doubles max shooting range.
 +5 ATK
 Precludes purchase of Eagle Eye
 ",20,,,
 Fast Regeneration,,Passive,,,,,,,,,,"The Hero recovers HP quickly.
-If the Hero goes 10 minutes without taking damage, he begins rapidly healing, reaching full HP 5 minutes later.
+If the Hero goes 10 minutes without taking damage. he begins rapidly healing. reaching full HP 5 minutes later.
 Does not cure ailments
 Does not regrow limbs
 Recovers from human ailments at a fraction of the time 
 ",8,,,
-Fire Imbue,,Flash,1,2,3,4,5,8,DMG (E),,,"The Hero imbues an object (e.g., Weapons, his fist) with fire, adding fire damage to attacks made with the imbued weapon.
+Fire Imbue,,Flash,1,2,3,4,5,8,DMG (E),,,"The Hero imbues an object (e.g.. Weapons. his fist) with fire. adding fire damage to attacks made with the imbued weapon.
 The Imbued object does not take damage from the fire.
-Size Limitation: The Imbued Object may not exceed the Hero’s swing limit.  Any weapon held by the Hero, or the Hero's own unarmed melee limbs, may be enhanced with fire at the Hero's discretion
+Size Limitation: The Imbued Object may not exceed the Hero’s swing limit.  Any weapon held by the Hero. or the Hero's own unarmed melee limbs. may be enhanced with fire at the Hero's discretion
 The listed damage is added to the damage of the attack
-",10,7,4,"The Hero ignites objects, adding Elemental DMG to his attacks"
-Fire Regeneration,,Passive,1,2,3,4,5,8,Regeneration,,,"When the Hero is in a high temperature environment (120f degree or higher), the Hero regenerates HP on Upkeep
-Regeneration is restricted to HP only (e.g., does not regenerate limbs, recover from status effects).
+",10,7,4,The Hero ignites objects. adding Elemental DMG to his attacks
+Fire Regeneration,,Passive,1,2,3,4,5,8,Regeneration,,,"When the Hero is in a high temperature environment (120f degree or higher). the Hero regenerates HP on Upkeep
+Regeneration is restricted to HP only (e.g.. does not regenerate limbs. recover from status effects).
 ",8,,,The Hero regenerates when in a high temperature environment
 Firewall,,Primary Action,1,2,4,6,8,12,Hexes Aflame,,,"Firewall blocks LoS and deals damage.
 The firewall runs in a straight line.
-Firewall extends 3m high, blocking LoS
+Firewall extends 3m high. blocking LoS
 Targets take damage:
 If in an aflame hex when the power effectuates;
 Enters an aflame hex;
@@ -231,67 +231,67 @@ Resistant to high pressure underwater
 Can pee and poo in the pool unnoticed.
 ",5,,,
 Flare,,Primary Action,,,,,,,,,,"Radial AoE; Hero is the epicenter; When a Hero performs the Flare action everyone in range must make an AGI Check
-The GM may determine that teammates must make this check - for instance if the Hero is being grappled and unable to signal, or if the Hero is using Flare as a surprise attack
+The GM may determine that teammates must make this check - for instance if the Hero is being grappled and unable to signal. or if the Hero is using Flare as a surprise attack
 Range: 5m
 DC: 10
 Pass: No Effect
 Fail: Target is Blind for 1rnd
-",20,N/A,N/A,"Hero shines a bright light in all directions, blinding everyone who isn't quick enough to cover their eyes"
+",20,N/A,N/A,Hero shines a bright light in all directions. blinding everyone who isn't quick enough to cover their eyes
 Flight,,Move,6,8,9,10,11,12,Distance,,,"Using Flight puts you in a Hovering state
-Flight’s movement can be done in any direction, including vertically.
+Flight’s movement can be done in any direction. including vertically.
 Grants “Quick Rise”
 R0 - Movement
 R2 - Flash
 R4 - Free
-AGI or CON Check",45,32,18,"The Hero can fly, thereby moving in any direction (including vertically)."
-Fly,,Flash,-2,2,4,6,8,10,EL Modifer,,,"When Hovering, the Hero is not affected by gravity and does not fall
+AGI or CON Check",45,32,18,The Hero can fly. thereby moving in any direction (including vertically).
+Fly,,Flash,-2,2,4,6,8,10,EL Modifer,,,"When Hovering. the Hero is not affected by gravity and does not fall
 Hover is deactivated upon KO.
-",,,,"While toggled on, the Hero naturally hovers slightly above the ground (less than 1 meter) 
-If the Hero is further above the ground, he will fall at a safe speed until he is 1 meter above the ground
+",,,,"While toggled on. the Hero naturally hovers slightly above the ground (less than 1 meter) 
+If the Hero is further above the ground. he will fall at a safe speed until he is 1 meter above the ground
 The hero may act unimpeded while hovering
-Hover grants a new movement ability, allowing the hero to move a distance of 2m.
-Alternatively, the Hero may use other movement abilities that do not require contact with the ground
+Hover grants a new movement ability. allowing the hero to move a distance of 2m.
+Alternatively. the Hero may use other movement abilities that do not require contact with the ground
 "
 Barrier & Bubble,,,,,,,,,,,,,30,21,12,
 Barrier,,Primary Action - Channel,1,3,5,7,9,15,Starting/Max HP,,,"Start-up: None
 Cooldown: 1 Round
 When the Hero declares Barrier:
 The Barrier forms at full HP
-During Upkeep, if the Barrier is damaged, it will heal according to the Heal number
+During Upkeep. if the Barrier is damaged. it will heal according to the Heal number
 Follows normal Concentration rules.
-Whenever the Barrier ceases (either at the Hero’s choice, upon failing Concentration, or when the HP hits 0HP), it triggers Cooldown
+Whenever the Barrier ceases (either at the Hero’s choice. upon failing Concentration. or when the HP hits 0HP). it triggers Cooldown
 The Size attribute represents the number of 'hex-sides' (1-meter walls) the Forcefield is when created
 The Force Field can extend to a max height of 3m
 The Hero can choose the exact height.
-When targeted, the force field has 0 EL 
+When targeted. the force field has 0 EL 
 The Force Field provides full cover
-Force Fields are transparent but visible, like tinted glass.
-The Barrier restricts everything from coming inside or out, including teleporters from traveling through the barrier.
-",10,7,4,"The hero channels to maintain an ongoing barrier, preventing all attacks and objects from penetrating."
+Force Fields are transparent but visible. like tinted glass.
+The Barrier restricts everything from coming inside or out. including teleporters from traveling through the barrier.
+",10,7,4,The hero channels to maintain an ongoing barrier. preventing all attacks and objects from penetrating.
 Barrier,,,0,1,1,2,3,5,Heal,,,,,,,
 Barrier,,,2,4,6,8,10,15,Size,,,,,,,
 Bubble,,Flash,1,2,3,4,5,8,HP Shield,,,"The Hero selects the epicenter of the Bubble.
 The Bubble extends to a height of 3m
 The Hero chooses the exact height.
 The Bubble encapsulates the entire affected area. Any attack that passes through the area with a priority lower than the Bubble hit the Bubble. 
-",25,18,10,"The hero briefly and temporarily creates an energy force field, typically to protect against a single attack"
+",25,18,10,The hero briefly and temporarily creates an energy force field. typically to protect against a single attack
 Bubble,,,Single Hex,1,1,1,2,3,Radius,,,,,,,
 Bubble,,,2d8+5,2d10+7,2d12+7,2d12+10,2d12+12,2d12+15,Priority,,,,,,,
 Glider,,Passive,,,,,,,,,,"The Hero is capable of gliding in the air.
-On upkeep, the Hero drops 1m
+On upkeep. the Hero drops 1m
 The Hero cannot fly upwards
 Movement: 5m
 ",5,N/A,N/A,
 Hardscales,,Passive,,,,,,,,,,"Scales provide +3 DS bonus
 DS is removed when the Hero is below 50% HP
-",7,,,"The Hero has scales, which will fall off when the Hero takes significant damage"
+",7,,,The Hero has scales. which will fall off when the Hero takes significant damage
 Hop,,Flash,,,,,,,,,,"EL +2 
 Movement: 3m
 ",8,N/A,N/A,The hero can hop like a frog at the blink of an eye
-Hover,,Passive,,,,,,,,,,"While toggled on, the Hero naturally hovers slightly above the ground (less than 1 meter) 
-If the Hero is further above the ground, he will fall at a safe speed until he is 1 meter above the ground
+Hover,,Passive,,,,,,,,,,"While toggled on. the Hero naturally hovers slightly above the ground (less than 1 meter) 
+If the Hero is further above the ground. he will fall at a safe speed until he is 1 meter above the ground
 The hero may act unimpeded while hovering
-Hover grants a new movement ability, allowing the hero to move a distance of 2m.
+Hover grants a new movement ability. allowing the hero to move a distance of 2m.
 ",5,,,
 Hydro Health Boost,,Passive,4,6,8,10,12,20,Max HP Increase,,,"Triggers whenever the Hero is in a body of water or within a rainstorm
 Tempest included
@@ -308,33 +308,33 @@ Should the Hero die and his body is seriously dismembers or disintegrated he wil
 ",8,,,
 Increase Velocity,,Flash,1,2,3,4,7,10,DMG (P),,,"Only applies to physical objects
 DMG Buff is considered Physical DMG
-",25,18,10,"The Hero increases the velocity of a physical object, affecting it’s DMG and ATK"
+",25,18,10,The Hero increases the velocity of a physical object. affecting it’s DMG and ATK
 Increase Velocity,,,0,1,2,3,4,6,ATK,,,,,,,
 Invisibility,,Primary Action,,,,,,,,,,"Hero can act unrestricted while invisible.
 Turning Invisible breaks LoS 
 Invisibility deactivates upon KO.
 Items worn/held by the Hero can be rendered invisible.
-Common Sense here: A Hero can turn all his clothes and weapons invisible, but he can’t turn his car invisible. Items rendered invisible must be equal to or less than the Hero's size.
+Common Sense here: A Hero can turn all his clothes and weapons invisible. but he can’t turn his car invisible. Items rendered invisible must be equal to or less than the Hero's size.
 Items require an additional PA to turn invisible.
 Unable to render another living thing invisible.
 Action to activate/deactivate
 ",50,N/A,N/A,The Hero can render himself invisible.
-Invulnerability,,Passive,2,4,5,7,10,15,DS,,,"Invulnerability is always active, even when sleeping, KO'd, or dead
-DS applies to Physical, Elemental, and Toxic damage. 
+Invulnerability,,Passive,2,4,5,7,10,15,DS,,,"Invulnerability is always active. even when sleeping. KO'd. or dead
+DS applies to Physical. Elemental. and Toxic damage. 
 ",50,35,20,The Hero is (practically) invulnerable to damage. 
 KBR Power,,+25 KBR,2,4,6,8,10,15,Size,,,Passive,8,,,
-Kinetic Bounce,,Passive,,,,,,,,,,"Upon taking damage, the Hero “bounces” outside of melee range.
+Kinetic Bounce,,Passive,,,,,,,,,,"Upon taking damage. the Hero “bounces” outside of melee range.
 Works on all damage types.
-The Hero is not required to “bounce” after every attack; however, the DS only activates when the Hero bounces a minimum of 1 hex.
+The Hero is not required to “bounce” after every attack; however. the DS only activates when the Hero bounces a minimum of 1 hex.
 Max Movement: 3m
 DS 1
 ",5,N/A,N/A,
-Kinetic Explosion,,Primary Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,Explosion DMG,,,"Any physical, nonorganic object can be infused with energy
-When the affected object makes contact with another object (other than the Hero), the object explodes
-If the affected object is successfully thrown at a target, the target takes the throwing damage first, followed by the exploding damage
-If the Kinetic Explosion damage exceeds the objects HP, the object is destroyed. 
+Kinetic Explosion,,Primary Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,Explosion DMG,,,"Any physical. nonorganic object can be infused with energy
+When the affected object makes contact with another object (other than the Hero). the object explodes
+If the affected object is successfully thrown at a target. the target takes the throwing damage first. followed by the exploding damage
+If the Kinetic Explosion damage exceeds the objects HP. the object is destroyed. 
 Explosion damage is Physical
-",25,18,10,"The Hero infuses an object with unstable energy. The next time the object makes contact with anything (other than the Hero), the object explodes!"
+",25,18,10,The Hero infuses an object with unstable energy. The next time the object makes contact with anything (other than the Hero). the object explodes!
 Kinetic Explosion,,,Single Hex,Single Hex,Single Hex,1m,1m,2m,Explosion Radius,,,,,,,
 Knuckle-Walker,,Move,0,2,3,4,5,6,Movement Bonus,,,"Movement bonus applies to AGI movement
 The Hero runs on four limbs
@@ -344,9 +344,9 @@ Lie Detector,,Passive,,,,,,,,,,The hero instantly knows if someone is lying.,2,,
 Limb Regeneration,,Passive,,,,,,,,,,"Lost/Destroyed Limbs regenerate in one hour.
 Injured Limbs regenerate in 10 minutes.
 ",3,,,
-Limited Invisibility,,Primary Action,,,,,,,,,,"As a PA, the Hero can turn invisible.
+Limited Invisibility,,Primary Action,,,,,,,,,,"As a PA. the Hero can turn invisible.
 The Hero remains invisible so long as he remains perfectly still.
-Using any action, flash, move, or taking damage deactivates the Invisibility.
+Using any action. flash. move. or taking damage deactivates the Invisibility.
 ",10,,,
 Lizard Walk,,Passive,,,,,,,,,,"Hero can move on all fours as easily as two legs.
 Hero maintains full EL and movement abilities while DOWNED.
@@ -359,25 +359,25 @@ Grapple Wrap,,Primary Action,,,,,,,,,,"ATK +2
 Crushing damage (d4 Str Mod) when maintaining hold",,,,
 Medic!,,Primary Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Regen HP,,,"The Hero can heal himself or others on touch.
 The Hero must make contact with whomever he is healing.
-Clothes/Armor do not prevent Healing, unless specifically stated. 
-If the target is at full HP, he can heal a missing limb over a Long Rest",45,32,18,"The Hero can regenerate, healing old wounds for himself and others."
+Clothes/Armor do not prevent Healing. unless specifically stated. 
+If the target is at full HP. he can heal a missing limb over a Long Rest",45,32,18,The Hero can regenerate. healing old wounds for himself and others.
 Morph,,Primary Action - Channel,,,,,,,,,,"Start-up: 2rnd
 Cooldown: None
-The Hero can alter his appearance, including clothing, and voice.
+The Hero can alter his appearance. including clothing. and voice.
 The Hero can alter his height by +/- 2ft and weight by +/- 100lbs.
-Morph does not alter the Hero’s memories nor mannerisms. As such, morph does not prevent individuals from becoming suspicious of the Hero if he is acting unusual or out of character. 
-The Hero reverts to his original appearance on KO, Death, or if Sap removes the power.
+Morph does not alter the Hero’s memories nor mannerisms. As such. morph does not prevent individuals from becoming suspicious of the Hero if he is acting unusual or out of character. 
+The Hero reverts to his original appearance on KO. Death. or if Sap removes the power.
 ",15,N/A,N/A,
 Never Tire,,Passive,,,,,,,,,,The Hero never tires and does not need to sleep,1,,,
 Night Vision,,Passive,,,,,,,,,,Can see in the dark as if it were the ideal light,3,,,
 Passive Healing,,Passive,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Regen HP,,,"The Hero heals HP every upkeep
 Regeneration occurs as long as the Hero is alive.
-If the Hero is at full HP, he can heal a missing limb over a Long Rest
+If the Hero is at full HP. he can heal a missing limb over a Long Rest
 Regeneration cannot bring the Hero back from the dead.
 Healing does not grant the hero any special immunity nor resistance to poisons or toxins
 ",50,35,20,The Hero regenerates his wounds automatically.
-Phaseshift,,Primary Action,,,,,,,,,,"When Phased, the Hero is in a parallel existence
-This parallel existence may be a realm, dimension, plane or otherwise. The Hero & GM should decide upon this at creation. 
+Phaseshift,,Primary Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
+This parallel existence may be a realm. dimension. plane or otherwise. The Hero & GM should decide upon this at creation. 
 Items worn/held by the Hero can be Phased/Unphased.
 Items Phased must be equal to or less than the Hero's size.
 Items require an additional Action to Phase.
@@ -385,15 +385,15 @@ Unable to render another living thing invisible.
 While in the parallel existence:
 The Hero can observe and communicate with the normal existence.
 The Hero is unable to otherwise interact with the normal existence and cannot be acted upon.
-Example: While Phased, the Hero can talk with his team but he cannot punch a target. Moreover, if the Hero is the target of an attack from the normal existence the attack will pass through the Hero.
+Example: While Phased. the Hero can talk with his team but he cannot punch a target. Moreover. if the Hero is the target of an attack from the normal existence the attack will pass through the Hero.
 The Hero is unaffected by gravity.
 The Hero can Fly with a movement of 5m.
-Should there be another object or target within the parallel existence, the Phased Hero would interact with them as usual.
-Example: If there is a key in the parallel existence, the Hero may Phase, pick up the key, and unphase, bringing the key into the normal existence. Furthermore, if the Hero encounters a being in the parallel existence, they may attack and deal damage to each other. 
+Should there be another object or target within the parallel existence. the Phased Hero would interact with them as usual.
+Example: If there is a key in the parallel existence. the Hero may Phase. pick up the key. and unphase. bringing the key into the normal existence. Furthermore. if the Hero encounters a being in the parallel existence. they may attack and deal damage to each other. 
 The Hero Phased is indistinguible from the Hero Unphased.
 ",36,N/A,N/A,The Hero can Phase
-Phaseshit,,Primary Action,,,,,,,,,,"When Phased, the Hero is in a parallel existence
-This parallel existence may be a realm, dimension, plane or otherwise. The Hero & GM should decide upon this at creation. 
+Phaseshit,,Primary Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
+This parallel existence may be a realm. dimension. plane or otherwise. The Hero & GM should decide upon this at creation. 
 Items worn/held by the Hero can be Phased/Unphased.
 Items Phased must be equal to or less than the Hero's size.
 Items require an additional Action to Phase.
@@ -401,92 +401,92 @@ Unable to render another living thing invisible.
 While in the parallel existence:
 The Hero can observe and communicate with the normal existence.
 The Hero is unable to otherwise interact with the normal existence and cannot be acted upon.
-Example: While Phased, the Hero can talk with his team but he cannot punch a target. Moreover, if the Hero is the target of an attack from the normal existence the attack will pass through the Hero.
+Example: While Phased. the Hero can talk with his team but he cannot punch a target. Moreover. if the Hero is the target of an attack from the normal existence the attack will pass through the Hero.
 The Hero is unaffected by gravity.
 The Hero can Fly with a movement of 5m.
-Should there be another object or target within the parallel existence, the Phased Hero would interact with them as usual.
-Example: If there is a key in the parallel existence, the Hero may Phase, pick up the key, and unphase, bringing the key into the normal existence. Furthermore, if the Hero encounters a being in the parallel existence, they may attack and deal damage to each other. 
+Should there be another object or target within the parallel existence. the Phased Hero would interact with them as usual.
+Example: If there is a key in the parallel existence. the Hero may Phase. pick up the key. and unphase. bringing the key into the normal existence. Furthermore. if the Hero encounters a being in the parallel existence. they may attack and deal damage to each other. 
 The Hero is noticeably different when Phased.
 GM and Player should determine this effect at creation. 
-Example: When Phased, the Hero emits a buzzing noise; the Hero’s appearance has a static distortion effect; the Hero glows brightly.
+Example: When Phased. the Hero emits a buzzing noise; the Hero’s appearance has a static distortion effect; the Hero glows brightly.
 ",30,N/A,N/A,The Hero can Phase
 Power Lock,,Passive,,,,,,,,,,The Hero is immune to the effects of Sap,5,,,
 Prehensile Tongue,,Primary Action,,,,,,,,,,"Grants special Tongue action
 Primary Action
 Attack deals Crushing Damage
 STR Mod d4
-Successful hit can either perform Desperate Grab grapple, or Disarm the target
-When extended, tongue can be used as a limb
+Successful hit can either perform Desperate Grab grapple. or Disarm the target
+When extended. tongue can be used as a limb
 ",5,,,
 Pufferfish,,Primary Action,,,,,,,,,,"PA to expand and contract.
-While expanded, Hero has 0 EL, appears inhuman, and acts as full cover from all directions. He expands to about twice the size, but more round shaped
+While expanded. Hero has 0 EL. appears inhuman. and acts as full cover from all directions. He expands to about twice the size. but more round shaped
 ",8,,,
 Quills,,Passive,,,,,,,,,,"Hero cannot pass for a human without a disguise of sorts
 Physical contact with the Hero causes 1d4 pts of piercing damage. This includes Melee attacks against the hero and the Hero's melee attacks.
 Hero rolls for damage.
-If Quills deals damage, any selected toxin or poison is applied. 
+If Quills deals damage. any selected toxin or poison is applied. 
 ",8,,,
 Ricochet Run,,Move,3,4,5,5,6,7,Movement Bonus,,,"The Hero moves by bouncing off of objects.
 The “Distance” number is a buff to the Hero’s normal AGI Movement number.
 The “Bounce” number references the total number of bounces the Hero is capable of per Movement Action.
 The Hero does not need to “bounce” to initiate the movement. 
-Barreling & Crashing Mechanics do not apply to movement done via Ricochet Run; however, the Hero makes physical contact with the objects he bounces off from, so damage from Quills or other such powers still applies.
-",12,8,5,"The Hero bounces off of objects, propelling himself."
+Barreling & Crashing Mechanics do not apply to movement done via Ricochet Run; however. the Hero makes physical contact with the objects he bounces off from. so damage from Quills or other such powers still applies.
+",12,8,5,The Hero bounces off of objects. propelling himself.
 Ricochet Run,,,2,3,3,4,5,6,Bounces,,,,,,,
 Rock Armor,,Primary Action,,,,,,,,,,"Immunity to Elemental DMG & Elemental Effects
 Grants Breathless
 +5 DS
 +15 KBR 
-The Hero can choose to activate Rock Weapon and Rock Armor simultaneously, or restrict the activation to one ability.
+The Hero can choose to activate Rock Weapon and Rock Armor simultaneously. or restrict the activation to one ability.
 Deactivates upon KO
 ",35,N/A,N/A,
 Rockweapon,,Primary Action,,,,,,,,,,"The Hero can turn his limbs into a weapon of any size.
-Note: If the Hero could not wield a LG weapon, he will not be able to lift his arm if he turns it into a LG weapon.
+Note: If the Hero could not wield a LG weapon. he will not be able to lift his arm if he turns it into a LG weapon.
 The Hero can elect to have both limbs different weapons; the Hero can also elect to only transform one limb.
-While activated, the transformed limb cannot pass for a normal human
+While activated. the transformed limb cannot pass for a normal human
 Transformed limbs cannot be used for movement
 Action to activate/deactivate
 ",18,N/A,N/A,The Hero encases his limbs with weapons...made of rocks!
 Quicksand & Sandstorm,,,,,,,,,,,,,20,14,8,The Hero can create and manipulate sand.
 Quicksand,,Primary Action,1,2,3,4,7,12,Max Quicksand Hexes,,,"Affected hexes are affected with Quicksand.
 Anyone standing in an affected hex is Immobile
-If a target touches the ground while passing through a quicksand hex, he must make an AGI check, DC defined by rank
+If a target touches the ground while passing through a quicksand hex. he must make an AGI check. DC defined by rank
 Pass: Target continues as normal
 Fail: Target is trapped in quicksand. All movement ends. 
 If a target is trapped in Quicksand:
 Target is immobile
 Target may spend his Action to attempt to escape the quicksand. Roll an AGI check same as above
 See: Stealth Doc to determine who can notice affected hexes.
-If someone is trapped in the quicksand, the quicksand is visible
-Hero chooses affected hexes (up to the # specified by rank, in any cohesive formation) ",10,7,4,"The Hero turns the ground into quicksand, immobilizing anyone who attempts to pass through!"
+If someone is trapped in the quicksand. the quicksand is visible
+Hero chooses affected hexes (up to the # specified by rank. in any cohesive formation) ",10,7,4,The Hero turns the ground into quicksand. immobilizing anyone who attempts to pass through!
 Quicksand,,,8,11,13,15,20,30,DC to escape,,,,,,,
 Sandstorm,,Flash,2,4,5,6,7,10,ATK Penalty,,,"Those inside the storm take Physical damage on upkeep.
 The Hero is immune to the damage of his own storm.
 Allies are not immune.
 Attacking through the storm causes an ATK penalty.
 This penalty does not apply when inside the storm and attacking a target also inside the storm. 
-The Hero determines the size of the storm, not to exceed max radius.
+The Hero determines the size of the storm. not to exceed max radius.
 See: Stealth Doc for visibility details
 Flash to activate/deactivate
-",15,11,6,"The Hero creates a sandstorm, limiting visibility and dealing damage to those caught in the storm."
+",15,11,6,The Hero creates a sandstorm. limiting visibility and dealing damage to those caught in the storm.
 Sandstorm,,,-,-,1,2,2,3,DMG (s),,,,,,,
 Sandstorm,,,1,1,2,2,3,5,Radius,,,,,,,
 Sap,,Passive,,,,,,,,,,"Sap allows the Hero to Absorb and Negate a power from a Target.
 The Absorbed and Negated power is defined as the Sapped power.
 The Sapped power is the target’s most costly SP power.
 The Hero may only have one Sapped power at a time.
-The Hero may shed an existing Sapped power as a free action, instantly.
+The Hero may shed an existing Sapped power as a free action. instantly.
 Clothes/Armor do not provide protection against the effects of Sap unless specifically stated. 
 Power Lock grants immunity from the effects of Sap.
 ",45,N/A,N/A,The Hero can Sap shit
-Physical Contact,,,,,,,,,,,,"Whenever the Hero makes Physical Contact with a target, he may Absorb a power.
+Physical Contact,,,,,,,,,,,,"Whenever the Hero makes Physical Contact with a target. he may Absorb a power.
 The Sapped power is at r1.
 The effects of Sap last 1 hour.
 ",,,,
-Maintained Physical Contact,,,,,,,,,,,,"Whenever the Hero maintains Physical Contact with a target for 2 rounds, the Hero Absorbs the power and negates the power from the target.
+Maintained Physical Contact,,,,,,,,,,,,"Whenever the Hero maintains Physical Contact with a target for 2 rounds. the Hero Absorbs the power and negates the power from the target.
 The Sapped power is at r1.
 The effects of Sap last 1 hour.
-This includes the Negate ability of Sap, regardless of the Hero shedding the Sapped power. 
+This includes the Negate ability of Sap. regardless of the Hero shedding the Sapped power. 
 ",,,,
 Seeds,,,,,,,,,,,,,30,TBD,TBD,
 Create Seed,,Primary Action,,,,,,,,,,"The Hero creates a seed of a specific tree. The seed is created instantly but the Hero must have a Short Rest before creating another seed. 
@@ -500,7 +500,7 @@ The tree lasts 24hours or until destroyed.
 ",,,,
 Fruit Tree,,,,,,,,,,,,"Occupies an entire Hex
 10HP
-Grows 3m high, with fruit branching out 3m
+Grows 3m high. with fruit branching out 3m
 Grows 1 fruit per round
 Eating a fruit regens 5HP and offers a free CON check w/a +5 Bonus
 Fruit has 2HP & -5CS Mod. 
@@ -512,22 +512,22 @@ Oak Tree,,,,,,,,,,,,"Occupies an entire Hex
 Starts 3m tall
 10HP
 Provides Full Cover
-Each subsequent round, on Hero’s turn, Oak Tree grows 3m taller and gains 5HP. 
+Each subsequent round. on Hero’s turn. Oak Tree grows 3m taller and gains 5HP. 
 Should the tree’s growth become obstructed it does not grow nor gain 5HP. 
-Instead, the tree and the object both take 1pt of Physical Damage until one of them is destroyed. 
+Instead. the tree and the object both take 1pt of Physical Damage until one of them is destroyed. 
 ",,,,
 Hive Tree,,,,,,,,,,,,"Occupies an entire Hex
 3m tall
 10HP
 3m Radial AoE
 Those in range suffer -3 ATK & EL
-Player & GM work out the lore details - does the tree draw a bunch of bugs, release noxious fumes, have a bunch of vines getting in your way.
+Player & GM work out the lore details - does the tree draw a bunch of bugs. release noxious fumes. have a bunch of vines getting in your way.
 ",,,,
 Bunya Pine,,,,,,,,,,,,"Occupies an entire Hex
 Height: 10m 
 10HP
 3m Radial AoE
-Whenever a target ends their turn under the Pine, make a Luck Check, DC 3
+Whenever a target ends their turn under the Pine. make a Luck Check. DC 3
 Pass: No Effect
 Fail: Giant Pinecone crashes down on the occupied hex.
 3 ATK (for Dodging purposes)
@@ -541,7 +541,7 @@ Earthquake & Rockwall,,,,,,,,,,,,,25,18,10,The Hero moves the ground beneath his
 Earthquake,,Primary Action,1d4+3,3d4+2,3d4+5,2d6+10,5d4+10,3d6+20,KBF,,,"Earthquake can be deployed in three different AoE styles.
 Hero chooses the type of AoE whenever he declares the action.
 KBE is Knockdown
-",15,11,6,"The Hero causes an earthquake, choosing the shape."
+",15,11,6,The Hero causes an earthquake. choosing the shape.
 Earthquake,,,2,4,4,5,5,8,Semicircle Range,,,,,,,
 Earthquake,,,3,4,4,5,6,10,Beam Range,,,,,,,
 Earthquake,,,1,3,3,4,4,6,Radius Range,,,,,,,
@@ -549,8 +549,8 @@ Rockwall,,Primary Action,1,3,5,7,10,15,HP,,,"The size listed on the NP represent
 The rock walls erupt from the ground to a max height of 3m.
 The Hero can choose the exact height. 
 The rock walls occupy the edges of a hex; a rock wall cannot cut through a hex.
-The rock wall can erupt through most grounds and floors, as long as a rock-like material (dirt, sand, etc.) is present underneath the floor
-For complicated scenarios, GM will decide if there is sufficient rock-like material available
+The rock wall can erupt through most grounds and floors. as long as a rock-like material (dirt. sand. etc.) is present underneath the floor
+For complicated scenarios. GM will decide if there is sufficient rock-like material available
 The Hero can crumble any or all of his rock walls a Flash
 The rock wall could imprison a target by building a wall along all sides of a hex.  
 ",15,11,6,The Hero can raise the earth up to him to create rock walls.
@@ -559,7 +559,7 @@ Rockwall,,,3,7,10,100,100,100,Range,,,,,,,
 Shoot Energy,,Primary Action,1d4+1,1d4+2,1d4+3,1d6+5,2d6+6,4d6+6,DMG,,,,25,18,10,
 Fireblast & Fireballz,,,,,,,,,,,,Grants Fireblast & Fireballz,25,18,10,The Hero shoots fire
 Fireblast,,Primary Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,DMG (E),,,Single Target,20,14,8,The Hero shoots a single blast of fire
-Fireballz,,Primary Action,1d4-1,1d4,1d4+1,1d4+1,1d6,1d6,DMG (E),,,"The number of fireballs is defined by rank. There are no restrictions on how the Hero designates each fireball. The Hero can send each fireball to a different target, or multiple fireballs to a single target. He must declare all at once and then make the roll for each",20,14,8,The Hero can shoot multiple fireballz
+Fireballz,,Primary Action,1d4-1,1d4,1d4+1,1d4+1,1d6,1d6,DMG (E),,,The number of fireballs is defined by rank. There are no restrictions on how the Hero designates each fireball. The Hero can send each fireball to a different target. or multiple fireballs to a single target. He must declare all at once and then make the roll for each,20,14,8,The Hero can shoot multiple fireballz
 Fireballz,,,2,2,2,3,3,5,# of Fireballzzz,,,,,,,
 Slimy Skin,,Passive,,,,,,,,,,+2 AGI Escape checks,2,,,
 Snake-like Body,,Passive,,,,,,,,,,"Snake Wrap Grapple
@@ -571,13 +571,13 @@ Grapple Snake Wrap,,Primary Action,,,,,,,,,,"ATK +5
 Crushing damage (d4 Str Mod) when maintaining hold
 ",5,,,
 Soar,,Move,2,4,5,6,7,8,Movement,,,"Using Soar puts you in a Hovering state
-Soar's movement can be done in any direction, including vertically.
-",20,14,8,"The Hero can fly, thereby moving in any direction (horizontally & vertically). Soar is a weaker version of “Flight”."
-Soaring Flight,,Toggleable,,,,,,,,,,"When Hovering, you are not affected by gravity and do not fall
+Soar's movement can be done in any direction. including vertically.
+",20,14,8,The Hero can fly. thereby moving in any direction (horizontally & vertically). Soar is a weaker version of “Flight”.
+Soaring Flight,,Toggleable,,,,,,,,,,"When Hovering. you are not affected by gravity and do not fall
 Flash to activate/deactivate
 Hover is deactivated upon KO.
-",,,,"The Hero is effortlessly hovering in the air, ready to dart in any direction"
-"Passive, Near Future & Far Future Soothsaying",,,,,,,,,,,,,35,25,14,
+",,,,The Hero is effortlessly hovering in the air. ready to dart in any direction
+Passive. Near Future & Far Future Soothsaying,,,,,,,,,,,,,35,25,14,
 Passive Soothsaying,,Passive,3,7,12,13,15,25,Initiative Bonus,,,,15,11,6,The Hero can see moments into the future
 Passive Soothsaying,,,0,1,1,1,2,3,ATK/EL,,,,,,,
 Near Future Soothsaying,,Primary Action - Channel,90,70,60,50,40,25,DC,,,"Start-up: 0i
@@ -589,16 +589,16 @@ Pass: +10 Global Priority Bonus for 1rnd.
 Fail: Hero sees a partial vision of the future. Hero can elect to stack the outcome of this roll with subsequent rolls.
 Hero can continue rolling without stacking. 
 Subsequent rolls require additional Channeled Actions.
-If the outcome of the roll exceeds 100, the Hero suffers a -1 Global Penalty until he rests.
+If the outcome of the roll exceeds 100. the Hero suffers a -1 Global Penalty until he rests.
 The Hero sees too great or too worrisome of a vision.",15,11,6,
 Far Future Soothsaying,,Primary Action - Channel,0,10,20,30,40,60,DC Buff,,,"Action - Channel
 Start-up: 10i
 Cooldown: 0i
-The Hero seeks out a vision; seeking information into the past, present, or future. 
-After start-up, The Hero rolls 1d100 + buffs. 
-The higher the roll, the more detailed the vision. 
-Once this power is used, it cannot be used again until the Hero has had a Long Rest.
-",15,11,6,"The Hero seeks out a vision; seeking information into the past, present, or future."
+The Hero seeks out a vision; seeking information into the past. present. or future. 
+After start-up. The Hero rolls 1d100 + buffs. 
+The higher the roll. the more detailed the vision. 
+Once this power is used. it cannot be used again until the Hero has had a Long Rest.
+",15,11,6,The Hero seeks out a vision; seeking information into the past. present. or future.
 Sticky Hands,,Passive,,,,,,,,,,"+2 to STR Grapple & Disarm Checks
 The Hero can climb steep or otherwise unclimbable surfaces at half AGI movement.
 ",4,,,
@@ -614,10 +614,10 @@ Head Shot
 Victim is blind and cannot speak. 
 5 HP
 ",35,25,14,
-Super Kinetic Bounce,,Passive,3,3,4,4,5,5,Distance,,,"Upon taking damage, the Hero “bounces” outside of melee range.
+Super Kinetic Bounce,,Passive,3,3,4,4,5,5,Distance,,,"Upon taking damage. the Hero “bounces” outside of melee range.
 Works on all damage types.
-The Hero is not required to “bounce” after every attack; however, the DS only activates when the Hero bounces a minimum of 1 meter.
-",20,14,8,"Whenever the Hero takes damage, he may “bounce” outside of melee range."
+The Hero is not required to “bounce” after every attack; however. the DS only activates when the Hero bounces a minimum of 1 meter.
+",20,14,8,Whenever the Hero takes damage. he may “bounce” outside of melee range.
 Super Kinetic Bounce,,,1,2,2,3,3,5,DS,,,,,,,
 Targeted DS,,Flash,2,4,5,7,10,15,DS,,,"Priority EL +20
 DS expires at the conclusion of the instance in which it effectuated
@@ -635,26 +635,26 @@ Triple Jump,,Move,1,2,2,3,3,4,1st Leap Movement,,,"The Hero leaps in an arc
 Subsequent Leaps increase movement.
 Movement caps out after the third Leap
 Using a non-Leap movement resets the movement down to the 1st Leap. 
-",10,7,4,"The Hero leaps in the air, with each leap carrying him further."
+",10,7,4,The Hero leaps in the air. with each leap carrying him further.
 Triple Jump,,,3,5,6,7,8,9,2nd Leap Movement,,,,,,,
 Triple Jump,,,6,10,12,14,16,18,3rd Leap Movement,,,,,,,
 Uncanny Aim,,Passive,2,4,6,8,10,15,ATK Bonus,,,,20,14,8,
 Venom,,Passive,1,1,1,2,2,3,Venom Damage,,,"Venom added to all unarmed melee strikes      Venom add a Neurotoxin counter if the target loses HP.
-On hit, the target makes a CON check:
+On hit. the target makes a CON check:
 Pass: Ignore Venom;
 Fail: Take Venom damage.
-Venom ignores DS, HP Shields, and affects the targets HP directly.
+Venom ignores DS. HP Shields. and affects the targets HP directly.
 ",10,,,
 Venom,,,2,3,5,10,15,20,DC,,,,,,,
-Vine Whip,,Primary Action,7,9,11,13,15,20,Escape DC,,,"On hit, Melee Damage + Tiny Object Mod
-Hit can Bind target to the ground, restricted grounded movement
+Vine Whip,,Primary Action,7,9,11,13,15,20,Escape DC,,,"On hit. Melee Damage + Tiny Object Mod
+Hit can Bind target to the ground. restricted grounded movement
 Escape DC defined by Rank
 DC Stacks with subsequent hits
 HP = 2/r
-The Hero can use both Move & Action on Vine Whip to Bind all limbs to the ground, restricting all limbs.
+The Hero can use both Move & Action on Vine Whip to Bind all limbs to the ground. restricting all limbs.
 NOTE: The target may remain standing despite having all limbs bound to the ground.
-The Hero can hold one end of the Vine freely, allowing the Hero to Vine Whip a target and then throw them like a ball on a chain with their next action. 
-",20,14,8,"Combination of Spider-Man, Indiana Jones, and a gardener who found a long vine in his yard."
+The Hero can hold one end of the Vine freely. allowing the Hero to Vine Whip a target and then throw them like a ball on a chain with their next action. 
+",20,14,8,Combination of Spider-Man. Indiana Jones. and a gardener who found a long vine in his yard.
 Vine Whip,,,5,10,10,15,15,20,Range,,,,,,,
 Vine Whip,,,,,,,,,,,,,,,,
 Vine Movement,,Primary Action/Move,4,6,7,8,9,10,Distance,,,"The Hero can swing around with his Vines.
@@ -662,9 +662,9 @@ Requires an Action to initiate and Movement to continue
 Distance is defined by rank
 Vertical Movement upwards counts as 2m for every 1m moved
 GM should use common sense approach to answering “are there enough objects for the player to continually swing?”
-When in doubt, follow Vine Whip Range
+When in doubt. follow Vine Whip Range
 ",,,,
-WIld Growth,,Primary Action,Single Hex,2,3,4,5,8,Radius,,,"Ranged, Radial AoE. The Hero selects the Epicenter.
+WIld Growth,,Primary Action,Single Hex,2,3,4,5,8,Radius,,,"Ranged. Radial AoE. The Hero selects the Epicenter.
 Hero transforms Hexes into overgrown vegetation. 
 Hexes transformed are considered Rugged Terrain
 1HP per Hex
@@ -683,8 +683,8 @@ Poison Sumac,,,6,6,7,8,10,15,Check Penalty,,,,,,,
 Burdock,,,6,7,8,9,15,20,AGI DC,,,"Entering a Poison Sumac hex forces the target to make an AGI check.
 Pass: No Effect
 Fail: EL & Stealth Penalty
-The target may spend an Action to remove all burrs, eliminating the penalty.
-Penalty does not stack, but if the target removes all burrs only to walk through another patch and fail the check, he will be covered in burrs again.
+The target may spend an Action to remove all burrs. eliminating the penalty.
+Penalty does not stack. but if the target removes all burrs only to walk through another patch and fail the check. he will be covered in burrs again.
 ",,,,
 Burdock,,,1,1,2,3,5,8,Stealth Check Penalty,,,,,,,
 Burdock,,,0,1,2,3,5,8,EL Penalty,,,,,,,
@@ -695,7 +695,7 @@ Fail: The target is bound to the Hex
 Viney,,,1,2,4,6,8,12,Vines HP,,,,,,,
 Skunk Cabbage,,,6,7,8,9,15,20,AGI DC,,,"Entering a Skunk Cabbage hex forces the target to make an AGI check.
 Pass: No Effect
-Fail: The target stinks and is easy to track. Also, the target must make a CON check
+Fail: The target stinks and is easy to track. Also. the target must make a CON check
 Pass: No additional effect
 Fail: target is blind for 1 round
 ",,,,
@@ -704,23 +704,23 @@ Thicket,,,,,,,,,,,,"Rugged Terrain
 Blocks LoS
 3m High
 5HP/r",,,,
-Winged Fly,,Move,6,8,9,10,11,12,Distance,,,Fly with wings for movement and EL,40,28,16,"Flight’s movement can be done in any direction, including vertically.
+Winged Fly,,Move,6,8,9,10,11,12,Distance,,,Fly with wings for movement and EL,40,28,16,"Flight’s movement can be done in any direction. including vertically.
 Grants “Quick Rise”
 R0 - Movement
 R2 - Flash
 R4 - Free"
-Winged Flight,,Toggleable,-2,2,4,6,8,10,EL Modifer,,,"When Flight is active, the Hero is not affected by gravity and does not fall
+Winged Flight,,Toggleable,-2,2,4,6,8,10,EL Modifer,,,"When Flight is active. the Hero is not affected by gravity and does not fall
 Flight is deactivated upon KO.
 ",,,,
 Extend/Retract Wings,,Toggleable,,,,,,,,,,"
-",,,,"Extending/Retracting Wings is an Action The wings are considered limbs, thus can be crippled or destroyed, preventing the Hero from using Flight's abilities Wings cannot be extended or utilized in extremely tight spaces (e.g., flying up a smokestack, through a narrow tunnel). Wings are not prehensile and cannot hold objects, weapons, or be used for any movement other than flying. If used as a melee weapon, they deal d2 melee damage. KO does not affect wings - if they were extended prior to being KO'd, they remain extended."
-Winged Soar,,Move,2,4,5,6,7,8,Movement,,,Like flight but cheaper and no EL bonus,18,13,7,"The Hero can fly with the use of his wings, thereby moving in any direction (including vertically)."
+",,,,Extending/Retracting Wings is an Action The wings are considered limbs. thus can be crippled or destroyed. preventing the Hero from using Flight's abilities Wings cannot be extended or utilized in extremely tight spaces (e.g.. flying up a smokestack. through a narrow tunnel). Wings are not prehensile and cannot hold objects. weapons. or be used for any movement other than flying. If used as a melee weapon. they deal d2 melee damage. KO does not affect wings - if they were extended prior to being KO'd. they remain extended.
+Winged Soar,,Move,2,4,5,6,7,8,Movement,,,Like flight but cheaper and no EL bonus,18,13,7,The Hero can fly with the use of his wings. thereby moving in any direction (including vertically).
 Winged Soaring Flight,,Toggleable,,,,,,,,,,Not affected by Gravity,,,,No EL bonus or penalty
-Extend/Retract Wings,,Toggleable,,,,,,,,,,"Extend as limbs, retract to hide",,,,"Extending/Retracting Wings is an Action
-The wings are considered limbs, thus can be crippled or destroyed, preventing the Hero from using Flight's abilities
-Wings cannot be extended or utilized in extremely tight spaces (e.g., flying up a smokestack, through a narrow tunnel).
-Wings are not prehensile and cannot hold objects, weapons, or be used for any movement other than flying. If used as a melee weapon, they deal d2 melee damage.
-KO does not affect wings - if they were extended prior to being KO'd, they remain extended."
+Extend/Retract Wings,,Toggleable,,,,,,,,,,Extend as limbs. retract to hide,,,,"Extending/Retracting Wings is an Action
+The wings are considered limbs. thus can be crippled or destroyed. preventing the Hero from using Flight's abilities
+Wings cannot be extended or utilized in extremely tight spaces (e.g.. flying up a smokestack. through a narrow tunnel).
+Wings are not prehensile and cannot hold objects. weapons. or be used for any movement other than flying. If used as a melee weapon. they deal d2 melee damage.
+KO does not affect wings - if they were extended prior to being KO'd. they remain extended."
 Penatrating Gaze,,Passive,,,,,,,,,,See through 1m of any material,10,,,The Hero can see through all but the thickest materials
 Super STR,,,,,,,,,See Stat/Universal,,,SD controls STR,45,32,18,
 Super AGI,,,,,,,,,See Stat/Universal,,,SD controls AGI,45,32,18,
@@ -729,16 +729,16 @@ Shoot Lightning,,Grants Lightning Bolt & Charge,,,,,,,,,,,,,,
 Lightning Bolt,,Action,1d4,1d6,1d4x2,1d6x2,1d6x3,1d6x4,DMG,,,Range: 50m,25,18,10,
 Lightning Bolt,,,0,1,2,2,3,4,ATK Bonus,,,,20,14,8,
 Charge,,Action,0,1,2,2,3,3,Lightning Bolt +ATK,,,"So long as the Hero has at least 1 Amp he is considered “Charged”
-While charged, the Hero receives ATK bonus to Shoot Electricity;
+While charged. the Hero receives ATK bonus to Shoot Electricity;
 Amps are lost when KO’d
 Amps will dissipate after 5 minutes
 Action to charge 1 Amp
 Max Amps: 1",20,14,8,
 Shock,,Flash,1,1d4,1d6,1d4x2,1d6x2,1d6x3,DMG,,,"Consumes 1 Amp when performed. Cannot be performed without any Amps
-Unlike other Flashes, this can be executed simultaneously with another action
-Unlike other actions, the Hero can declare Shock at any point (e.g., while the Hero is being punched by an enemy; while the Hero has contact with a target).
-If multiple targets are able to be shocked, the one closest to the Hero will receive the damage. Ties are resolved by die roll. 
-As there is no Priority for Shock, there is no opportunity for the target to avoid the damage.",,,,
+Unlike other Flashes. this can be executed simultaneously with another action
+Unlike other actions. the Hero can declare Shock at any point (e.g.. while the Hero is being punched by an enemy; while the Hero has contact with a target).
+If multiple targets are able to be shocked. the one closest to the Hero will receive the damage. Ties are resolved by die roll. 
+As there is no Priority for Shock. there is no opportunity for the target to avoid the damage.",,,,
 Big,,Passive,,,,,,,"ATK Penalty: -1
 EL Penalty: -3
 SL Penalty
@@ -746,7 +746,7 @@ Extra Melee Dice: 1
 Attack Size Modifier: 1
 KBR Bonus: +15
 +Melee Range: +1
-Size while Enlarged (ft, Approx) 10-15ft (Hero's choice)
+Size while Enlarged (ft. Approx) 10-15ft (Hero's choice)
 Weight while Enlarged (lbs Approx): 300-500
 L/T Mod: +1r
 Carry Limit: 3x
@@ -760,7 +760,7 @@ Extra Melee Dice: 2
 Attack Size Modifier: 2
 KBR Bonus: +30
 +Melee Range: +2
-Size while Enlarged (ft, Approx) 20-30ft (Hero's choice)
+Size while Enlarged (ft. Approx) 20-30ft (Hero's choice)
 Weight while Enlarged (lbs Approx): 1500-2000 (Hero's choice)
 L/T Mod: +2r
 Carry Mod: 10x
@@ -774,7 +774,7 @@ Extra Melee Dice: 3
 Attack Size Modifier: 4
 KBR Bonus: +60
 +Melee Range: +4
-Size while Enlarged (ft, Approx) 50-75ft (Hero's choice)
+Size while Enlarged (ft. Approx) 50-75ft (Hero's choice)
 Weight while Enlarged (lbs Approx): 7000-10000
 L/T Mod: +4r 
 Carry Mod: 50x
@@ -787,7 +787,7 @@ SL Bonus:
 Melee Dice Reduction: -1
 Attack Size Reduction: -1
 KBR Reduction: -15
-Size while Enlarged (ft, Approx) 2-3ft (Hero's Choice)
+Size while Enlarged (ft. Approx) 2-3ft (Hero's Choice)
 Weight while Enlarged (lbs Approx) 30-50lbs (Hero's Choice)
 L/T Reduction: -1r
 Carry Reduction: 1/5
@@ -799,7 +799,7 @@ SL Bonus:
 Melee Dice Reduction: -2
 Attack Size Reduction: -2
 KBR Reduction: -30
-Size while Enlarged (ft, Approx) 1-2ft (Hero's Choice)
+Size while Enlarged (ft. Approx) 1-2ft (Hero's Choice)
 Weight while Enlarged (lbs Approx) 10-15lbs (Hero's Choice)
 L/T Reduction: -3r
 Carry Reduction: 1/10
@@ -811,7 +811,7 @@ SL Bonus:
 Melee Dice Reduction: -3
 Attack Size Reduction: -4
 KBR Reduction: -60
-Size while Enlarged (ft, Approx) 1/2in - 2in (Hero's Choice)
+Size while Enlarged (ft. Approx) 1/2in - 2in (Hero's Choice)
 Weight while Enlarged (lbs Approx) 1-2lbs (Hero's Choice)
 L/T Reduction: -5r
 Carry Reduction: 1/50

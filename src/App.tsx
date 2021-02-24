@@ -84,7 +84,7 @@ export default class App extends React.Component<IProps, IState> {
   //var csv is the CSV file with headers
 public csvToJson(csv: string){
 
-  var lines=csv.split("\n");
+  var lines=csv.split("\r\n");
 
   var result = [];
 
