@@ -12,89 +12,98 @@ import {
   Select,
   Input
 } from '@material-ui/core';
+import BuyablePower from "./BuyablePower";
 
 
 interface IProps {
-  powerData: {};
-  selectedPowers: {};
-  handleConfirm: (selectedPowers:any) => void;
+  powerData: any[];
+  selectedPowers: any[];
+  handleConfirm: (selectedPowers: any) => void;
   handleClose: () => void;
 }
 
 interface IState {
-   selectedPowers: any; //int array?
-   totalCP: number;
-   remainingCP: number;
+  selectedPowers: any; //int array?
+  totalCP: number;
+  remainingCP: number;
+  tableColumns: any[];
+  tableRows: any[];
 }
 
 export default class ManagePowersPanel extends React.Component<IProps, IState> {
 
-    constructor(props:IProps) {
-        super(props);
-        this.state = {
-                        selectedPowers: "",
-                        totalCP: 0,
-                        remainingCP: 0
-                     };
-    }
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      selectedPowers: "",
+      totalCP: 0,
+      remainingCP: 0,
+      tableColumns: [],
+      tableRows: []
+    };
+  }
+  componentDidMount() {
+  }
 
-    render() { 
-        return (
-        <Dialog
-          aria-describedby="Manage Powers"
-          aria-labelledby="Manage Powers"
-          className="manage-powers-dialog"
-          fullWidth={true}
-          onClose={this.props.handleClose}
-          open={true}
-        >
-          <DialogTitle>Manage Powers</DialogTitle>
-          <DialogContent>
-            Manage your powers here
-          </DialogContent>
-          
-          <DialogActions>
-            <form onSubmit={(selectedPowers : any) => this.props.handleConfirm(this.state.selectedPowers)} >
-                <FormControl required variant="outlined" className="inputControl">
-                <InputLabel id="model-type-input-label">Total CP</InputLabel>
-                <TextField
-                    id="total-cp-input"
-                    label="Total CP"
-                    type="number"
-                    required
-                    onChange={this.calculateRemainingCP}
-                    className="total-cp-input"
-                />
-                  {//this.props.powerData && 
-                     
-                  }
-                <div><pre>{JSON.stringify(this.props.powerData, null, 2) }</pre></div>
-                
+  render() {
+    return (
+      <Dialog
+        aria-describedby="Manage Powers"
+        aria-labelledby="Manage Powers"
+        className="manage-powers-dialog"
+        fullWidth={true}
+        onClose={this.props.handleClose}
+        open={true}
+      >
+        <DialogTitle>Manage Powers</DialogTitle>
+
+        <DialogActions>
+          <form onSubmit={(selectedPowers: any) => this.props.handleConfirm(this.state.selectedPowers)} >
+            <FormControl required variant="outlined">
+              <TextField
+                id="total-cp-input"
+                label="Total CP"
+                type="number"
+                onChange={() => this.calculateRemainingCP}
+                className="total-cp-input"
+              />
+              Remaining CP: {this.state.remainingCP}
+
+
+              {/*
                 </FormControl>
                 <FormControl className="inputControl">
-                
-                  {/* todo - render rows
-                  
-                  
-                  this.props.powerData && this.props.powerData.map((modelTypeName: string) => {
+              */}
+              <table><th>Power</th><th>Major</th><th>Minor</th><th>Lesser</th>
+                {this.props.powerData && this.props.powerData.map((row: any[string]) => {
+                  if (row["Major"] || row["Minor"] || row["Lesser"]) {
                     return (
-                      <MenuItem key={modelTypeName} value={modelTypeName}>{modelTypeName}</MenuItem>
-                    );
-                  })*/}
-                
-                
-                </FormControl>
-                <div className="actionButtons">
-                    <Button type="submit">Save</Button>
-                    <Button onClick={() => this.props.handleClose()} color="primary">Cancel</Button>
-                </div>
-            </form>
-          </DialogActions>
-        </Dialog>
-      );
-    }
+                      <BuyablePower
+                        name={row["Power"]}
+                        majorCost={row["Major"]}
+                        minorCost={row["Minor"]}
+                        lesserCost={row["Lesser"]}
+                      />
+                    )
+                  }
+                })}
+              </table>
 
-    private calculateRemainingCP(){
+            </FormControl>
+            <div className="actionButtons">
+              <Button type="submit">Save</Button>
+              <Button onClick={() => this.props.handleClose()} color="primary">Cancel</Button>
+            </div>
+          </form>
+        </DialogActions>
+      </Dialog>
+    );
+  }
 
-    }
+  private calculateRemainingCP() {
+    this.setState({
+      remainingCP: this.state.totalCP
+    })
+  }
+
 }
