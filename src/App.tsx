@@ -1,15 +1,15 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import ManagePowersPanel from "./components/ManagePowersPanel";
-
+import { flattenDiagnosticMessageText } from "typescript";
 
 interface IState {
   showManagePowersPanel: boolean;
   selectedPowers: any; //number array?
+  powerData: {}
 }
 
 interface IProps {
-  powerData: any; //big array
 }
 
 export default class App extends React.Component<IProps, IState> {
@@ -19,8 +19,21 @@ export default class App extends React.Component<IProps, IState> {
 
     this.state = {
         showManagePowersPanel: false,
-        selectedPowers: ""
+        selectedPowers: "",
+        powerData: {}
     }
+
+  }
+
+  componentDidMount() {
+
+    fetch("./data/powers.csv")
+      .then((r) => r.text())
+       .then(text  => {
+         this.setState({
+          powerData: this.csvToJson(text)
+          });  
+        });
   }
 
   render() {
@@ -28,9 +41,7 @@ export default class App extends React.Component<IProps, IState> {
       <div>
         <NavBar 
           toggleManagePowers={
-            this.setState({
-              showManagePowersPanel: !this.state.showManagePowersPanel
-            })
+            this.showManagePowersPanel
           }
         />
         <main className="container">
@@ -41,23 +52,58 @@ export default class App extends React.Component<IProps, IState> {
         </main>
         {this.state.showManagePowersPanel && 
         (<ManagePowersPanel
-          powerData={this.props.powerData}
+          powerData={this.state.powerData}
           selectedPowers={this.state.selectedPowers}
           handleConfirm={(selectedPowers: any) =>
             this.updateSelectedPowers(selectedPowers)
           }
-          handleClose={() => this.closePanel()
+          handleClose={() => this.closePanels()
           }
         /> )}
       </div>
     );
   }
 
-  public closePanel(){
+  closePanels = () => {
+    this.setState({
+      showManagePowersPanel: false
+    })
+  }
+
+  updateSelectedPowers= (selectedPowers: any) => {
 
   }
 
-  public updateSelectedPowers(selectedPowers: any){
+  showManagePowersPanel = () => {
+    this.setState({
+      showManagePowersPanel: true
+    }
+    );
+  }
+
+  //var csv is the CSV file with headers
+public csvToJson(csv: string){
+
+  var lines=csv.split("\n");
+
+  var result = [];
+
+  var headers=lines[0].split(",");
+
+  for(var i=1;i<lines.length;i++){
+
+	  var obj: any = {};
+	  var currentline=lines[i].split(",");
+
+	  for(var j=0;j<headers.length;j++){
+		  obj[headers[j]] = currentline[j];
+	  }
+
+	  result.push(obj);
 
   }
+  
+  //return result; //JavaScript object
+  return JSON.stringify(result); //JSON
+}
 }

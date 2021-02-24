@@ -45,7 +45,7 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
           aria-labelledby="Manage Powers"
           className="manage-powers-dialog"
           fullWidth={true}
-          onClose={() => this.props.handleClose()}
+          onClose={this.props.handleClose}
           open={true}
         >
           <DialogTitle>Manage Powers</DialogTitle>
@@ -65,14 +65,10 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
                     onChange={this.calculateRemainingCP}
                     className="total-cp-input"
                 />
-                  {/* todo - render rows
-                  
-                  
-                  this.props.powerData && this.props.powerData.map((modelTypeName: string) => {
-                    return (
-                      <MenuItem key={modelTypeName} value={modelTypeName}>{modelTypeName}</MenuItem>
-                    );
-                  })*/}
+                  {//this.props.powerData && 
+                     
+                  }
+                <div><pre>{JSON.stringify(this.props.powerData, null, 2) }</pre></div>
                 
                 </FormControl>
                 <FormControl className="inputControl">

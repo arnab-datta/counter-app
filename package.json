@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.15.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "2.1.8",
-    "typescript": "^3.4.2"
+    "typescript": "^3.9.9"
   },
   "scripts": {
     "start": "react-scripts start",
