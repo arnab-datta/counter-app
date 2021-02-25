@@ -17,17 +17,15 @@ import BuyablePower from "./BuyablePower";
 
 interface IProps {
   powerData: any[];
-  selectedPowers: any[];
+  selectedPowers: any;
   handleConfirm: (selectedPowers: any) => void;
   handleClose: () => void;
 }
 
 interface IState {
-  selectedPowers: any; //int array?
+  selectedPowers: any; 
   totalCP: number;
   remainingCP: number;
-  tableColumns: any[];
-  tableRows: any[];
 }
 
 export default class ManagePowersPanel extends React.Component<IProps, IState> {
@@ -35,14 +33,13 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      selectedPowers: "",
+      selectedPowers: {},
       totalCP: 0,
-      remainingCP: 0,
-      tableColumns: [],
-      tableRows: []
+      remainingCP: 0
     };
   }
   componentDidMount() {
+
   }
 
   render() {
@@ -83,6 +80,7 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
                         majorCost={row["Major"]}
                         minorCost={row["Minor"]}
                         lesserCost={row["Lesser"]}
+                        purchase={(name: string, level: number) => this.purchasePower(name, level)}
                       />
                     )
                   }
@@ -91,7 +89,7 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
 
             </FormControl>
             <div className="actionButtons">
-              <Button type="submit">Save</Button>
+              <Button onClick={() => this.props.handleConfirm(this.state.selectedPowers)} color="primary">Save</Button>
               <Button onClick={() => this.props.handleClose()} color="primary">Cancel</Button>
             </div>
           </form>
@@ -104,6 +102,9 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
     this.setState({
       remainingCP: this.state.totalCP
     })
+  }
+  public purchasePower(name: string, level: number){
+    this.state.selectedPowers[name] = level;
   }
 
 }

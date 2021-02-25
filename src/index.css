@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#statpanel #abilitypanel{
+  width: 50%;
+  height: 80%;
+  border: 1;
+}

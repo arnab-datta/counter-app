@@ -19,6 +19,7 @@ interface IProps {
     majorCost: number;
     minorCost: number;
     lesserCost: number;
+    purchase: any;
 }
 
 interface IState {
@@ -35,6 +36,11 @@ export default class BuyablePower extends React.Component<IProps, IState> {
     }
     componentDidMount() {
 
+    }
+
+    componentDidUpdate(){
+        //power was either purchased or sold
+        this.props.purchase(this.props.name, this.state.purchased);
     }
 
     render() {

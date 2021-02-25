@@ -1,11 +1,12 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import ManagePowersPanel from "./components/ManagePowersPanel";
+import InfoPanel from "./components/InfoPanel";
 import { flattenDiagnosticMessageText } from "typescript";
 
 interface IState {
   showManagePowersPanel: boolean
-  selectedPowers: any //number array?
+  selectedPowers: any
   powerData: any[]
 }
 
@@ -13,14 +14,14 @@ interface IProps {
 }
 
 export default class App extends React.Component<IProps, IState> {
-  
+
   constructor(props: IProps) {
     super(props);
 
     this.state = {
-        showManagePowersPanel: false,
-        selectedPowers: "",
-        powerData: []
+      showManagePowersPanel: false,
+      selectedPowers: {},
+      powerData: []
     }
 
   }
@@ -29,37 +30,40 @@ export default class App extends React.Component<IProps, IState> {
 
     fetch("https://raw.githubusercontent.com/aburnettt/adxsheets/master/src/data/powers.csv")
       .then((r) => r.text())
-       .then(text  => {
-         this.setState({
+      .then(text => {
+        this.setState({
           powerData: this.csvToJson(text)
-          });  
         });
+      });
   }
 
   render() {
     return (
       <div>
-        <NavBar 
+        <NavBar
           toggleManagePowers={
             this.showManagePowersPanel
           }
         />
         <main className="container">
-{/*          <StatPanel />
-          <AbilityPanel />
+          <InfoPanel
+            powerData={this.state.powerData}
+            selectedPowers={this.state.selectedPowers}
+            powerRank={5}
+          />
 
-*/}
+
         </main>
-        {this.state.showManagePowersPanel && 
-        (<ManagePowersPanel
-          powerData={this.state.powerData}
-          selectedPowers={this.state.selectedPowers}
-          handleConfirm={(selectedPowers: any) =>
-            this.updateSelectedPowers(selectedPowers)
-          }
-          handleClose={() => this.closePanels()
-          }
-        /> )}
+        {this.state.showManagePowersPanel &&
+          (<ManagePowersPanel
+            powerData={this.state.powerData}
+            selectedPowers={this.state.selectedPowers}
+            handleConfirm={(selectedPowers: any) =>
+              this.updateSelectedPowers(selectedPowers)
+            }
+            handleClose={() => this.closePanels()
+            }
+          />)}
       </div>
     );
   }
@@ -70,8 +74,8 @@ export default class App extends React.Component<IProps, IState> {
     })
   }
 
-  updateSelectedPowers= (selectedPowers: any) => {
-
+  updateSelectedPowers = (selectedPowers: any) => {
+    alert(JSON.stringify(selectedPowers));
   }
 
   showManagePowersPanel = () => {
@@ -82,30 +86,30 @@ export default class App extends React.Component<IProps, IState> {
   }
 
   //var csv is the CSV file with headers
-public csvToJson(csv: string){
+  public csvToJson(csv: string) {
 
-  var lines=csv.split("\r\n");
+    var lines = csv.split("\r\n");
 
-  var result = [];
+    var result = [];
 
-  //todo would be nice to support commas in data
-  //by skipping escaped commas
-  var headers=lines[0].split(",");
+    //todo would be nice to support commas in data
+    //by skipping escaped commas
+    var headers = lines[0].split(",");
 
-  for(var i=1;i<lines.length;i++){
+    for (var i = 1; i < lines.length; i++) {
 
-	  var obj: any = {};
-	  var currentline=lines[i].split(",");
+      var obj: any = {};
+      var currentline = lines[i].split(",");
 
-	  for(var j=0;j<headers.length;j++){
-		  obj[headers[j]] = currentline[j];
-	  }
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
 
-	  result.push(obj);
+      result.push(obj);
 
+    }
+
+    return result;
+    //return JSON.stringify(result); //JSON
   }
-  
-  return result;
-  //return JSON.stringify(result); //JSON
-}
 }
