@@ -3,17 +3,17 @@ import {
     Container,
     Button
 } from '@material-ui/core';
-import Ability from './Ability';
+import { DataGrid, RowsProp, ColDef, CellParams } from '@material-ui/data-grid';
+
 
 
 interface IProps {
-    powerData: any[]
-    selectedPowers: any
-    powerRank: number
+    abilities: any[]
+    buffs: any[]
 }
 
 interface IState {
-    abilities: any[]
+
 }
 
 export default class InfoPanel extends React.Component<IProps, IState> {
@@ -21,101 +21,58 @@ export default class InfoPanel extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
         this.state = {
-            abilities: []
+            abilityList: [],
+            buffList: []
         };
     }
-    componentDidMount() {
-        this.parseAbilities();
-    }
 
-    componentDidUpdate() {
-        //power was either purchased or sold
-    }
 
     render() {
-        return (
-            <Container >
-                {/* Todo - update to data grid*/}
-                <table>
-                    <tr>
-                        <th>Ability</th>
-                        <th>Action</th>
-                        <th>Atk</th>
-                        <th>Dmg</th>
-                        <th>Effect</th>
-                        <th>Detail</th>
-                    </tr>
-                    {this.state.abilities.forEach(function (a) {
-                        (<Ability
-                            name={a["name"]}
-                            action={a["action"]}
-                            atk={a["atk"]}
-                            dmg={a["dmg"]}
-                            effect={a["effect"]}
-                            condition={a["condition"]}
-                            detail={a["detail"]}
-                        />)
-                    })
-                    }
-
-                </table>
-
-                <table>
-                    <tr>
-                        <th>Buff</th>
-                        <th>Value</th>
-                        <th>Effect</th>
-                        <th>Detail</th>
-                    </tr>
-                </table>
-            </Container>
-        );
-    }
-
-
-    private parseAbilities() {
-
-        var abilities = [];
-        var buffs = [];
-        //todo - get Powers to give you the appropriate abilities and buffs
-
-        this.props.powerData.forEach(power => {
-            if (this.props.selectedPowers[power["Power"]]) {
-                if (power["row"] === "Ability") {
-                    //we have this power
-                    //todo - determine rank
-                    var ability: any;
-                    ability["name"] = power["Power"];
-                    ability["action"] = power["Action"];
-                    ability["dmg"] = power["r5"];
-                    ability["atk"] = "1d20";
-                    ability["effect"] = power["Effect"];
-                    ability["detail"] = power["Detail"];
-                    var tags: String = power["Tags"];
-                    ability["tags"] = tags.split(" ");
-                    ability["condition"] = power["Condition"];
-                    abilities.push(ability);
-                } else if (power["row"] === "Buff") {
-                    var buff: any;
-                    buff["value"] = power["r5"];
-                    buff["effect"] = power["Effect"];
-                    buff["detail"] = power["Detail"];
-                    var tags: String = power["Tags"];
-                    buff["tags"] = tags.split(" ");
-                    buff["condition"] = power["Condition"];
-                    buffs.push(buff);
-                }
+        const rows: RowsProp = [];
+        const columns: ColDef[] = [
+            { field: 'name', headerName: 'Name', width: 250 },
+            { field: 'action', headerName: 'Action', width: 120 },
+            { field: 'atk', headerName: 'Atk', width: 120 },
+            { field: 'dmg', headerName: 'Roll', width: 180 },
+            { field: 'effect', headerName: 'Effect', width: 150 },
+            {
+                field: 'detail', headerName: 'Detail', width: 100,
+                renderCell: (params: CellParams) => (
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        size="small"
+                        onClick={() => alert(params.value)}
+                    >?</Button>
+                )
             }
-        });
-        /*
-                name = { a["name"]}
-                atk = { a["atk"]}
-                dmg = { a["dmg"]}
-                effect = { a["effect"]}
-                condition = { a["condition"]}
-                detail = { a["detail"]}
-        
-                */
+        ];
 
+        for (let i = 0; i < this.props.abilities.length; i++) {
+            var a = this.props.abilities[i];
+            rows.push(
+                {
+                    id: i,
+                    name: a["name"],
+                    action: a["action"],
+                    atk: a["atk"],
+                    dmg: a["dmg"],
+                    effect: a["effect"],
+                    detail: a["detail"]
+                }
+            )
+
+        }
+        return (
+            <div style={{ height: 300, width: '100%' }}>
+                <DataGrid
+                    hideFooter={true}
+                    hideFooterPagination={true}
+                    rows={rows}
+                    columns={columns} />
+            </div>
+
+        )
     }
+
 }

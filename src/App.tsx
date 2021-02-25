@@ -2,12 +2,13 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import ManagePowersPanel from "./components/ManagePowersPanel";
 import InfoPanel from "./components/InfoPanel";
-import { flattenDiagnosticMessageText } from "typescript";
 
 interface IState {
   showManagePowersPanel: boolean
   selectedPowers: any
   powerData: any[]
+  parsedAbilities: any[]
+  parsedBuffs: any[]
 }
 
 interface IProps {
@@ -21,12 +22,23 @@ export default class App extends React.Component<IProps, IState> {
     this.state = {
       showManagePowersPanel: false,
       selectedPowers: {},
-      powerData: []
+      powerData: [],
+      parsedAbilities: [],
+      parsedBuffs: []
     }
 
   }
 
   componentDidMount() {
+
+    let sp = window.localStorage.getItem("selectedPowers");
+    if (sp != null) {
+      try {
+        this.parseAbilities(JSON.parse(sp));
+      } catch (e) {
+
+      }
+    }
 
     fetch("https://raw.githubusercontent.com/aburnettt/adxsheets/master/src/data/powers.csv")
       .then((r) => r.text())
@@ -34,6 +46,9 @@ export default class App extends React.Component<IProps, IState> {
         this.setState({
           powerData: this.csvToJson(text)
         });
+        if (this.state.selectedPowers){
+          this.parseAbilities(this.state.selectedPowers);
+        }
       });
   }
 
@@ -47,9 +62,8 @@ export default class App extends React.Component<IProps, IState> {
         />
         <main className="container">
           <InfoPanel
-            powerData={this.state.powerData}
-            selectedPowers={this.state.selectedPowers}
-            powerRank={5}
+            abilities={this.state.parsedAbilities}
+            buffs={this.state.parsedBuffs}
           />
 
 
@@ -74,8 +88,11 @@ export default class App extends React.Component<IProps, IState> {
     })
   }
 
-  updateSelectedPowers = (selectedPowers: any) => {
-    alert(JSON.stringify(selectedPowers));
+  updateSelectedPowers(selectedPowers: any) {
+    window.localStorage.setItem("selectedPowers", JSON.stringify(selectedPowers));
+    this.parseAbilities(selectedPowers);
+
+    this.closePanels();
   }
 
   showManagePowersPanel = () => {
@@ -111,5 +128,57 @@ export default class App extends React.Component<IProps, IState> {
 
     return result;
     //return JSON.stringify(result); //JSON
+  }
+
+
+
+  private parseAbilities(sp: any) {
+    if (!sp ||
+      sp.length === 0) {
+      return;
+    }
+
+    var abilities: any[] = [];
+    var buffs: any[] = [];
+    //todo - get Powers to give you the appropriate abilities and buffs
+    this.state.powerData.forEach(power => {
+      if (sp[power["Power"]] &&
+        sp[power["Power"]] > 0) {
+        if (power["Row"] === "Ability") {
+          var ability = {
+            "name": power["Power"],
+            "action": power["Action"],
+            "dmg": power["r5"],
+            "atk": "1d20",
+            "effect": power["Effect"],
+            "detail": power["Detail"],
+            "tags": power["Tags"].split(" "),
+            "condition": power["Condition"]
+          };
+
+          abilities.push(ability);
+        } else if (power["row"] === "Buff") {
+          //todo
+        }
+      }
+    });
+
+    //todo - apply buffs
+
+    this.setState({
+      parsedAbilities: abilities,
+      parsedBuffs: buffs,
+      selectedPowers: sp
+    })
+
+    /*
+            name = { a["name"]}
+            atk = { a["atk"]}
+            dmg = { a["dmg"]}
+            effect = { a["effect"]}
+            condition = { a["condition"]}
+            detail = { a["detail"]}        
+            */
+
   }
 }

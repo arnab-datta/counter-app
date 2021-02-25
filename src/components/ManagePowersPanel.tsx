@@ -23,7 +23,7 @@ interface IProps {
 }
 
 interface IState {
-  selectedPowers: any; 
+  selectedPowers: any;
   totalCP: number;
   remainingCP: number;
 }
@@ -71,20 +71,22 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
                 </FormControl>
                 <FormControl className="inputControl">
               */}
-              <table><th>Power</th><th>Major</th><th>Minor</th><th>Lesser</th>
-                {this.props.powerData && this.props.powerData.map((row: any[string]) => {
-                  if (row["Major"] || row["Minor"] || row["Lesser"]) {
-                    return (
-                      <BuyablePower
-                        name={row["Power"]}
-                        majorCost={row["Major"]}
-                        minorCost={row["Minor"]}
-                        lesserCost={row["Lesser"]}
-                        purchase={(name: string, level: number) => this.purchasePower(name, level)}
-                      />
-                    )
-                  }
-                })}
+              <table><thead><tr><th>Power</th><th>Major</th><th>Minor</th><th>Lesser</th></tr></thead>
+                <tbody>
+                  {this.props.powerData && this.props.powerData.map((row: any[string]) => {
+                    if (row["Major"] || row["Minor"] || row["Lesser"]) {
+                      return (
+                        <BuyablePower
+                          name={row["Power"]}
+                          majorCost={row["Major"]}
+                          minorCost={row["Minor"]}
+                          lesserCost={row["Lesser"]}
+                          purchase={(name: string, level: number) => this.purchasePower(name, level)}
+                        />
+                      )
+                    }
+                  })}
+                </tbody>
               </table>
 
             </FormControl>
@@ -103,7 +105,7 @@ export default class ManagePowersPanel extends React.Component<IProps, IState> {
       remainingCP: this.state.totalCP
     })
   }
-  public purchasePower(name: string, level: number){
+  public purchasePower(name: string, level: number) {
     this.state.selectedPowers[name] = level;
   }
 

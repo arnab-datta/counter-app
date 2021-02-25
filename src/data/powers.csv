@@ -1,5 +1,5 @@
-Power,Row,Action Type,r0,r1,r2,r3,r4,r5,Effect,Tags,Conditions,Detail,Major,Minor,Lesser,Lore
-Active Healing,Ability,Primary Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Heal,heal,,If the Hero is at full HP. he can heal a missing limb over a Long Rest,35,25,14,The Hero can regenerate his wounds as an action.
+Power,Row,Action,r0,r1,r2,r3,r4,r5,Effect,Tags,Condition,Detail,Major,Minor,Lesser,Lore
+Active Healing,Ability,Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Heal,heal,,If the Hero is at full HP. he can heal a missing limb over a Long Rest,35,25,14,The Hero can regenerate his wounds as an action.
 Adaptive Skin,Buff,,2,4,5,7,10,15,DS,ds,adapted to damage type,"Whenever the Hero incurs damage. he may adapt to that damage type. gaining a bonus to Natural DS.
 This bonus remains in effect until the Hero chooses to drop the resistance.
 The Hero may elect to drop the resistance at any time.
@@ -18,7 +18,7 @@ r0: 1rnd Channel
 r1: Action
 r5: Flash
 ",15,11,6,The Hero adjusts the weight of an object
-Armadillo Ball,Ability,Primary Action,,,,,,,,,,"Hero can curl into a ball slightly larger than his own head (size of a basketball for an average human).
+Armadillo Ball,Ability,Action,,,,,,,,,,"Hero can curl into a ball slightly larger than his own head (size of a basketball for an average human).
 Curling and uncurling cost a PA.
 Cannot use any limbs while in ball form
 DS +2 while in ball form
@@ -29,56 +29,56 @@ Audio Mimicry,Buff,,,,,,,,Mimic any sound,,,"The Hero can mimic any voice. gener
 The Hero can perfectly imitate any sound he has heard only once
 The Hero can speak freely in someone else's voice if he has heard them speak a few sentences
 ",4,,,
-Bark Armor,,Primary Action,0,0,2,4,6,10,Starting HP,,,,25,18,10,
-Bark Armor,,,2,6,10,15,20,30,Max HP,,,"Action activates Bark Armor
+Bark Armor,Ability,Action,0,0,2,4,6,10,Starting HP,,,,25,18,10,
+Bark Armor,Buff,,2,6,10,15,20,30,Max HP,,,"Action activates Bark Armor
 Starting HP based on rank
 Bark Armor regens on upkeep
 Cannot exceed Max HP. defined by rank
 Action to activate/deactivate
 ",,,,Armor that grows more powerful over time
-Bark Armor,,,1,1,1,2,2,3,Regen HP,,,,,,,
-Big Mitts,,Passive,,,,,,,,,,"Upgrade Unarmed Melee attack
+Bark Armor,Buff,,1,1,1,2,2,3,Regen HP,,,,,,,
+Big Mitts,Buff,Passive,,,,,,,,,,"Upgrade Unarmed Melee attack
 +2 Grip checks
 Unable to manipulate small items (smaller than a banana). It's like wearing very heavy gloves. 
 Hero cannot pass for a human without disguising or hiding the hands somehow
 ",5,,,Big. gorilla-like hands that hit hard. grip well. and look ridiculous
-Biological Redundancy,,Passive,,,,,,,,,,+5 Max HP,8,,,The Hero’s body develops redundant systems. allowing him to survive damage that would take a normal human out of commission.
-Biotoxin,,Passive,1,1,1,2,2,3,DMG per counter,,,"Applied to all unarmed melee strikes  Poisoned Attacks add a Neurotoxin counter if the target loses HP.
+Biological Redundancy,Buff,Passive,,,,,,,,,,+5 Max HP,8,,,The Hero’s body develops redundant systems. allowing him to survive damage that would take a normal human out of commission.
+Biotoxin,Buff,Passive,1,1,1,2,2,3,DMG per counter,,,"Applied to all unarmed melee strikes  Poisoned Attacks add a Neurotoxin counter if the target loses HP.
 On upkeep. poisoned targeted make a CON check:
 Pass: Remove Biotoxin counters;
 Fail: Take Biotoxin damage for each Biotoxin counter.
 ",10,,,
-Biotoxin,,,7,8,9,15,20,30,DC,,,,,,,
-Bound,,Move,0,2,3,4,5,6,Movement Bonus,,,"Movement bonus applies to AGI movement
+Biotoxin,Buff,,7,8,9,15,20,30,DC,,,,,,,
+Bound,Ability,Move,0,2,3,4,5,6,Movement Bonus,,,"Movement bonus applies to AGI movement
 Can move vertically
 ",15,N/A,N/A,The hero can bound around the battlefield like a lemur
-Breathless,,Passive,,,,,,,,,,"The Hero doesn’t need to breathe. He is immune to asphyxiation. drowning. choking. etc.
+Breathless,Buff,Passive,,,,,,,,,,"The Hero doesn’t need to breathe. He is immune to asphyxiation. drowning. choking. etc.
 The hero still has working lungs and may breathe voluntarily. however. he will not breathe automatically
 This makes him effectively immune to airborne effects
 ",1,,,
-Burrow,,Primary Action,2,6,8,10,12,14,Movement,,,"As a PA. the Hero can burrow underground in all but the most unwelcoming terrain. 
+Burrow,Ability,Action,2,6,8,10,12,14,Movement,,,"As a PA. the Hero can burrow underground in all but the most unwelcoming terrain. 
 Once underground. Burrow provides a PA movement ability which allows him to move in any direction.
 ",5,,,
-Claws,,Flash,,,,,,,,,,"Extend/Retract Claws
+Claws,Ability,Flash,,,,,,,,,,"Extend/Retract Claws
 Flash
 While Claws are extended: Upgrade Melee Dice
 If the Hero selects the (Toxic) version. the Hero can select one Toxin. 
 Claws deliver the chosen Toxin.
 ",5,,,
-Cleanse,,Primary Action,2,5,10,25,50,75,Range (m),,,"Radial AoE; Hero is the epicenter. All targets in range may make a CON Check + Cleanse CON bonus. 
+Cleanse,Ability,Action,2,5,10,25,50,75,Range (m),,,"Radial AoE; Hero is the epicenter. All targets in range may make a CON Check + Cleanse CON bonus. 
 This check roll may shed Toxin effects.
 At r0. Cleanse heals all human (i.e. non-super powered) ailments and poisoning.
 ",14,10,6,The Hero rids allies of poisons and toxins
-Cleanse,,,7,9,10,11,13,17,CON Bonus,,,,,,,
-Cocoon,,Primary Action - Channel,,,,,,,,,,"The Hero encloses himself in a cocoon.
+Cleanse,Buff,,7,9,10,11,13,17,CON Bonus,,,,,,,
+Cocoon,Ability,Channel,,,,,,,,,,"The Hero encloses himself in a cocoon.
 Cocoon has 5HP
 Until the cocoon is destroyed or the Hero emerges. he is in a deep sleep. unable to see. hear. or act.
 After 5 rounds. The Hero emerges. recovering from all HP loss. lost limbs. ailments. and fatigue. but very hungry.
 The Hero can prematurely emerge as a Flash
 If the cocoon is destroyed before the Hero emerges. he recovers nothing and is knocked down.
 ",10,,,
-Combustion,,,,,,,,,,,,,30,21,12,The Hero can use fiery blasts to propel himself with explosive movement
-Blast-Off!,,Flash,3,5,6,7,8,9,Distance,,,"May only move in a Straight line. but may move in any direction including vertically.
+Combustion,Power,,,,,,,,,blastoff propulsion,,,30,21,12,The Hero can use fiery blasts to propel himself with explosive movement
+Blast-Off!,Ability,Flash,3,5,6,7,8,9,Distance,blastoff,,"May only move in a Straight line. but may move in any direction including vertically.
 The Hero must move the full distance of the Blast-Off! action.
 If the hero is the victim of a grapple and uses Blast-Off!. he uses the ""Escape Roll"" to make a Check. This acts the same as attempting to escape a grapple as an action.
 Grants “Quick Rise”
@@ -86,11 +86,11 @@ R0 - Movement
 R2 - Flash
 R4 - Free
 ",,,,The Hero triggers an explosion to instantly propel himself in any one direction (including vertically)
-Blast-Off!,,,1d20+4,1d20+8,1d20+10,1d20+12,1d20+14,1d20+16,Priority,,,,,,,
-Blast-Off!,,,1d6+5,3d6+5,4d6+5,5d6+5,6d6+5,7d6+5,Escape Roll,,,,,,,
-Propulsion,,Move,7,9,10,11,12,14,Distance,,,May only move in a Straight line. but may move in any direction including vertically.,,,,The Hero uses blasts of fire to propel himself around the battlefield
+Blast-Off!,Buff,,1d20+4,1d20+8,1d20+10,1d20+12,1d20+14,1d20+16,Priority,,,,,,,
+Blast-Off!,Buff,,1d6+5,3d6+5,4d6+5,5d6+5,6d6+5,7d6+5,Escape Roll,,,,,,,
+Propulsion,Ability,Move,7,9,10,11,12,14,Distance,propulsion,,May only move in a Straight line. but may move in any direction including vertically.,,,,The Hero uses blasts of fire to propel himself around the battlefield
 Fly,,Flash,-6,-5,-5,-4,-3,-2,EL Penalty,,,Grants Hover; Can be toggled on & off as a Flash,,,,The Hero channels his explosive power as thrusters. allowing him to hover in place. albeit clumsily.
-Store/Maintain Energy,,Primary Action,2,3,4,4,5,6,Meters per Charge,,,"The Hero spends PA to Store/Maintain “movement energy”
+Store/Maintain Energy,,Action,2,3,4,4,5,6,Meters per Charge,,,"The Hero spends PA to Store/Maintain “movement energy”
 Can move vertically.
 Cannot exceed Max Charges.The energy dissipates in 1rnd unless the Hero spends another PA to Store/Maintain
 Spending PA gains Charges.
@@ -99,11 +99,11 @@ Store/Maintain Energy,,,6,9,12,14,16,20,Max Charges,,,,,,,
 Expend Energy,,Flash,,,,,,,,,,"The Hero spends a Flash to expend all “movement energy” 
 Grants “Quick Rise” as a Flash. assuming the Hero has movement energy
 ",,,,
-Corrosive Bile,,Primary Action,1,1,2,2,3,5,DS Reduction,,,"Hero launches a liquid corrosive substance with limited range
+Corrosive Bile,,Action,1,1,2,2,3,5,DS Reduction,,,"Hero launches a liquid corrosive substance with limited range
 A successful attack temporarily reduces the target's DS
 Effect lasts 1 hour
 ",4,,,
-Drain Life,,Primary Action,1,1d4,1d6,1d6+2,2d6,2d6+3,DMG/Regen,,,"Lay on Hands
+Drain Life,,Action,1,1d4,1d6,1d6+2,2d6,2d6+3,DMG/Regen,,,"Lay on Hands
 Drain Life is a melee action that deals damage and hea
 ls the Hero by the same amount.
 Drain Life is made on contact with the target. As such. the Hero needs to make a successful ATK roll to touch the target.
@@ -111,7 +111,7 @@ Drain Life requires direct contact with the target; however. Clothes/Armor do no
 Only regens HP
 (e.g.. does not cure ailments. regrow limbs)
 ",20,14,8,
-Duping,,Primary Action - Channel,,,,,,,,,,"Start-up: 2rnds
+Duping,,Channel,,,,,,,,,,"Start-up: 2rnds
 Cooldown: 1rnd
 Split into 2 exact copies of yourself
 All Dupes share experiences and senses
@@ -123,7 +123,7 @@ Whenever a Dupe is KO’d. killed. or Banished. the max number of Dupes you can 
 This penalty lasts for 1 hour.
 Items held by the Hero are duplicated.
 Spells. Finite Powers are duplicated.",50,N/A,N/A,The Hero is a big. stupid. idiot. And now there's two of them. 
-Merge,,Primary Action - Channel,,,,,,,,,,"Start-up: 1rnd
+Merge,,Channel,,,,,,,,,,"Start-up: 1rnd
 Cooldown: 1rnd
 One Dupe can merge with any other number of Dupes in Melee Range
 The remaining Dupe. determined by the player. retains the “best parts” of the merged clones
@@ -131,7 +131,7 @@ Highest HP
 Fewest. least harmful Status Ailments
 etc...
 ",,,,
-Banish,,Primary Action,,,,,,,,,,The Hero Banishes all other Dupes from existence.,,,,
+Banish,,Action,,,,,,,,,,The Hero Banishes all other Dupes from existence.,,,,
 Eagle Eye,,Passive,,,,,,,,,,"The Hero can see twice as far. twice as clearly.
 Doubles max shooting range.
 +2 ATK
@@ -144,7 +144,7 @@ The “Reach” numbers denote the number of meters the Hero can stretch his bod
 Stretching is not limited to the Hero's limbs. e.g.. The Hero can stretch his arms as easily as he can stretch his neck.
 Stretching implies a “flattening” of the stretched limb and/or body part. 
 ",50,N/A,N/A,
-Elemental Barrier,,Primary Action,1,3,5,7,9,15,Starting/Max HP,,,"When the Hero declares the Barrier. the Barrier forms at full HP.
+Elemental Barrier,,Action,1,3,5,7,9,15,Starting/Max HP,,,"When the Hero declares the Barrier. the Barrier forms at full HP.
 The Barrier only blocks elemental damage.
 Non-elemental attacks and individuals may pass through the Barrier. unrestricted.
 The size listed on the NP represents the size of the Force FIeld
@@ -167,7 +167,7 @@ All stored energy is released upon KO
 The Energy dissipates after 1 hour 
 ",50,35,20,The Hero absorbs incoming damage and converts it into usable energy
 Energy Containment,,,10,20,24,30,45,75,Max MC,,,,,,,
-Energy Blast,,Primary Action,,,,,,,,,,"Damage is based on MC spent on this action.
+Energy Blast,,Action,,,,,,,,,,"Damage is based on MC spent on this action.
 1 MC = 1pt of damage
 MC spent on action must be declared prior to ATK Roll.
 ",8,N/A,N/A,
@@ -185,7 +185,7 @@ R0 - Movement Action
 R3 - Flash
 Requires 1 MC. 
 ",5,N/A,N/A,
-Exoskeleton Armor,,Primary Action,2,4,5,7,10,15,DS,,,"Upgrade unarmed Melee attacks when active
+Exoskeleton Armor,,Action,2,4,5,7,10,15,DS,,,"Upgrade unarmed Melee attacks when active
 Deactivates upon KO
 Stealth Penalty when active
 DS applies to Physical & Elemental damage only
@@ -215,7 +215,7 @@ The listed damage is added to the damage of the attack
 Fire Regeneration,,Passive,1,2,3,4,5,8,Regeneration,,,"When the Hero is in a high temperature environment (120f degree or higher). the Hero regenerates HP on Upkeep
 Regeneration is restricted to HP only (e.g.. does not regenerate limbs. recover from status effects).
 ",8,,,The Hero regenerates when in a high temperature environment
-Firewall,,Primary Action,1,2,4,6,8,12,Hexes Aflame,,,"Firewall blocks LoS and deals damage.
+Firewall,,Action,1,2,4,6,8,12,Hexes Aflame,,,"Firewall blocks LoS and deals damage.
 The firewall runs in a straight line.
 Firewall extends 3m high. blocking LoS
 Targets take damage:
@@ -230,7 +230,7 @@ AGI movement doubled while in the water
 Resistant to high pressure underwater
 Can pee and poo in the pool unnoticed.
 ",5,,,
-Flare,,Primary Action,,,,,,,,,,"Radial AoE; Hero is the epicenter; When a Hero performs the Flare action everyone in range must make an AGI Check
+Flare,,Action,,,,,,,,,,"Radial AoE; Hero is the epicenter; When a Hero performs the Flare action everyone in range must make an AGI Check
 The GM may determine that teammates must make this check - for instance if the Hero is being grappled and unable to signal. or if the Hero is using Flare as a surprise attack
 Range: 5m
 DC: 10
@@ -253,7 +253,7 @@ Hover grants a new movement ability. allowing the hero to move a distance of 2m.
 Alternatively. the Hero may use other movement abilities that do not require contact with the ground
 "
 Barrier & Bubble,,,,,,,,,,,,,30,21,12,
-Barrier,,Primary Action - Channel,1,3,5,7,9,15,Starting/Max HP,,,"Start-up: None
+Barrier,,Channel,1,3,5,7,9,15,Starting/Max HP,,,"Start-up: None
 Cooldown: 1 Round
 When the Hero declares Barrier:
 The Barrier forms at full HP
@@ -310,7 +310,7 @@ Increase Velocity,,Flash,1,2,3,4,7,10,DMG (P),,,"Only applies to physical object
 DMG Buff is considered Physical DMG
 ",25,18,10,The Hero increases the velocity of a physical object. affecting it’s DMG and ATK
 Increase Velocity,,,0,1,2,3,4,6,ATK,,,,,,,
-Invisibility,,Primary Action,,,,,,,,,,"Hero can act unrestricted while invisible.
+Invisibility,,Action,,,,,,,,,,"Hero can act unrestricted while invisible.
 Turning Invisible breaks LoS 
 Invisibility deactivates upon KO.
 Items worn/held by the Hero can be rendered invisible.
@@ -322,14 +322,14 @@ Action to activate/deactivate
 Invulnerability,,Passive,2,4,5,7,10,15,DS,,,"Invulnerability is always active. even when sleeping. KO'd. or dead
 DS applies to Physical. Elemental. and Toxic damage. 
 ",50,35,20,The Hero is (practically) invulnerable to damage. 
-KBR Power,,+25 KBR,2,4,6,8,10,15,Size,,,Passive,8,,,
+KBR Power,,Passive,2,4,6,8,10,15,Size,,,Passive,8,,,
 Kinetic Bounce,,Passive,,,,,,,,,,"Upon taking damage. the Hero “bounces” outside of melee range.
 Works on all damage types.
 The Hero is not required to “bounce” after every attack; however. the DS only activates when the Hero bounces a minimum of 1 hex.
 Max Movement: 3m
 DS 1
 ",5,N/A,N/A,
-Kinetic Explosion,,Primary Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,Explosion DMG,,,"Any physical. nonorganic object can be infused with energy
+Kinetic Explosion,,Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,Explosion DMG,,,"Any physical. nonorganic object can be infused with energy
 When the affected object makes contact with another object (other than the Hero). the object explodes
 If the affected object is successfully thrown at a target. the target takes the throwing damage first. followed by the exploding damage
 If the Kinetic Explosion damage exceeds the objects HP. the object is destroyed. 
@@ -344,7 +344,7 @@ Lie Detector,,Passive,,,,,,,,,,The hero instantly knows if someone is lying.,2,,
 Limb Regeneration,,Passive,,,,,,,,,,"Lost/Destroyed Limbs regenerate in one hour.
 Injured Limbs regenerate in 10 minutes.
 ",3,,,
-Limited Invisibility,,Primary Action,,,,,,,,,,"As a PA. the Hero can turn invisible.
+Limited Invisibility,,Action,,,,,,,,,,"As a PA. the Hero can turn invisible.
 The Hero remains invisible so long as he remains perfectly still.
 Using any action. flash. move. or taking damage deactivates the Invisibility.
 ",10,,,
@@ -355,13 +355,13 @@ Long Limbs,,Passive,,,,,,,,,,"Melee range increased by 1m
 New grapple available (Wrap)
 Hero cannot pass for a human without a disguise of sorts
 ",8,,,
-Grapple Wrap,,Primary Action,,,,,,,,,,"ATK +2
+Grapple Wrap,,Action,,,,,,,,,,"ATK +2
 Crushing damage (d4 Str Mod) when maintaining hold",,,,
-Medic!,,Primary Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Regen HP,,,"The Hero can heal himself or others on touch.
+Medic!,,Action,1d4,1d4+1,2d4+1,2d6+2,3d6+5,4d4+10,Regen HP,,,"The Hero can heal himself or others on touch.
 The Hero must make contact with whomever he is healing.
 Clothes/Armor do not prevent Healing. unless specifically stated. 
 If the target is at full HP. he can heal a missing limb over a Long Rest",45,32,18,The Hero can regenerate. healing old wounds for himself and others.
-Morph,,Primary Action - Channel,,,,,,,,,,"Start-up: 2rnd
+Morph,,Channel,,,,,,,,,,"Start-up: 2rnd
 Cooldown: None
 The Hero can alter his appearance. including clothing. and voice.
 The Hero can alter his height by +/- 2ft and weight by +/- 100lbs.
@@ -376,7 +376,7 @@ If the Hero is at full HP. he can heal a missing limb over a Long Rest
 Regeneration cannot bring the Hero back from the dead.
 Healing does not grant the hero any special immunity nor resistance to poisons or toxins
 ",50,35,20,The Hero regenerates his wounds automatically.
-Phaseshift,,Primary Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
+Phaseshift,,Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
 This parallel existence may be a realm. dimension. plane or otherwise. The Hero & GM should decide upon this at creation. 
 Items worn/held by the Hero can be Phased/Unphased.
 Items Phased must be equal to or less than the Hero's size.
@@ -392,7 +392,7 @@ Should there be another object or target within the parallel existence. the Phas
 Example: If there is a key in the parallel existence. the Hero may Phase. pick up the key. and unphase. bringing the key into the normal existence. Furthermore. if the Hero encounters a being in the parallel existence. they may attack and deal damage to each other. 
 The Hero Phased is indistinguible from the Hero Unphased.
 ",36,N/A,N/A,The Hero can Phase
-Phaseshit,,Primary Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
+Phaseshit,,Action,,,,,,,,,,"When Phased. the Hero is in a parallel existence
 This parallel existence may be a realm. dimension. plane or otherwise. The Hero & GM should decide upon this at creation. 
 Items worn/held by the Hero can be Phased/Unphased.
 Items Phased must be equal to or less than the Hero's size.
@@ -411,14 +411,14 @@ GM and Player should determine this effect at creation.
 Example: When Phased. the Hero emits a buzzing noise; the Hero’s appearance has a static distortion effect; the Hero glows brightly.
 ",30,N/A,N/A,The Hero can Phase
 Power Lock,,Passive,,,,,,,,,,The Hero is immune to the effects of Sap,5,,,
-Prehensile Tongue,,Primary Action,,,,,,,,,,"Grants special Tongue action
-Primary Action
+Prehensile Tongue,,Action,,,,,,,,,,"Grants special Tongue action
+Action
 Attack deals Crushing Damage
 STR Mod d4
 Successful hit can either perform Desperate Grab grapple. or Disarm the target
 When extended. tongue can be used as a limb
 ",5,,,
-Pufferfish,,Primary Action,,,,,,,,,,"PA to expand and contract.
+Pufferfish,,Action,,,,,,,,,,"PA to expand and contract.
 While expanded. Hero has 0 EL. appears inhuman. and acts as full cover from all directions. He expands to about twice the size. but more round shaped
 ",8,,,
 Quills,,Passive,,,,,,,,,,"Hero cannot pass for a human without a disguise of sorts
@@ -433,14 +433,14 @@ The Hero does not need to “bounce” to initiate the movement.
 Barreling & Crashing Mechanics do not apply to movement done via Ricochet Run; however. the Hero makes physical contact with the objects he bounces off from. so damage from Quills or other such powers still applies.
 ",12,8,5,The Hero bounces off of objects. propelling himself.
 Ricochet Run,,,2,3,3,4,5,6,Bounces,,,,,,,
-Rock Armor,,Primary Action,,,,,,,,,,"Immunity to Elemental DMG & Elemental Effects
+Rock Armor,,Action,,,,,,,,,,"Immunity to Elemental DMG & Elemental Effects
 Grants Breathless
 +5 DS
 +15 KBR 
 The Hero can choose to activate Rock Weapon and Rock Armor simultaneously. or restrict the activation to one ability.
 Deactivates upon KO
 ",35,N/A,N/A,
-Rockweapon,,Primary Action,,,,,,,,,,"The Hero can turn his limbs into a weapon of any size.
+Rockweapon,,Action,,,,,,,,,,"The Hero can turn his limbs into a weapon of any size.
 Note: If the Hero could not wield a LG weapon. he will not be able to lift his arm if he turns it into a LG weapon.
 The Hero can elect to have both limbs different weapons; the Hero can also elect to only transform one limb.
 While activated. the transformed limb cannot pass for a normal human
@@ -448,7 +448,7 @@ Transformed limbs cannot be used for movement
 Action to activate/deactivate
 ",18,N/A,N/A,The Hero encases his limbs with weapons...made of rocks!
 Quicksand & Sandstorm,,,,,,,,,,,,,20,14,8,The Hero can create and manipulate sand.
-Quicksand,,Primary Action,1,2,3,4,7,12,Max Quicksand Hexes,,,"Affected hexes are affected with Quicksand.
+Quicksand,,Action,1,2,3,4,7,12,Max Quicksand Hexes,,,"Affected hexes are affected with Quicksand.
 Anyone standing in an affected hex is Immobile
 If a target touches the ground while passing through a quicksand hex. he must make an AGI check. DC defined by rank
 Pass: Target continues as normal
@@ -489,12 +489,12 @@ The effects of Sap last 1 hour.
 This includes the Negate ability of Sap. regardless of the Hero shedding the Sapped power. 
 ",,,,
 Seeds,,,,,,,,,,,,,30,TBD,TBD,
-Create Seed,,Primary Action,,,,,,,,,,"The Hero creates a seed of a specific tree. The seed is created instantly but the Hero must have a Short Rest before creating another seed. 
+Create Seed,,Action,,,,,,,,,,"The Hero creates a seed of a specific tree. The seed is created instantly but the Hero must have a Short Rest before creating another seed. 
 The seed must be planted within 1 hour of creation or it dies. 
 Seed must be planted in ground that would support plant life. This may include a Hex that has been modified with Wild Growth.
 Seed has 1HP with a CS modifier of -20
 ",,,,
-Plant Seed,,Primary Action,,,,,,,,,,"The Hero plants the seed. The seed must be planted in ground that would normally support plant life or a Wild Growth hex.
+Plant Seed,,Action,,,,,,,,,,"The Hero plants the seed. The seed must be planted in ground that would normally support plant life or a Wild Growth hex.
 The tree sprouts the following round.
 The tree lasts 24hours or until destroyed.
 ",,,,
@@ -538,14 +538,14 @@ Beanstalk,,,,,,,,,,,,"Occupies an entire Hex
 Grows 5m per round
 Can be easily scaled",,,,
 Earthquake & Rockwall,,,,,,,,,,,,,25,18,10,The Hero moves the ground beneath his feet.
-Earthquake,,Primary Action,1d4+3,3d4+2,3d4+5,2d6+10,5d4+10,3d6+20,KBF,,,"Earthquake can be deployed in three different AoE styles.
+Earthquake,,Action,1d4+3,3d4+2,3d4+5,2d6+10,5d4+10,3d6+20,KBF,,,"Earthquake can be deployed in three different AoE styles.
 Hero chooses the type of AoE whenever he declares the action.
 KBE is Knockdown
 ",15,11,6,The Hero causes an earthquake. choosing the shape.
 Earthquake,,,2,4,4,5,5,8,Semicircle Range,,,,,,,
 Earthquake,,,3,4,4,5,6,10,Beam Range,,,,,,,
 Earthquake,,,1,3,3,4,4,6,Radius Range,,,,,,,
-Rockwall,,Primary Action,1,3,5,7,10,15,HP,,,"The size listed on the NP represents the number of rock walls the Hero can create: 1 = 1 side of a hex.
+Rockwall,,Action,1,3,5,7,10,15,HP,,,"The size listed on the NP represents the number of rock walls the Hero can create: 1 = 1 side of a hex.
 The rock walls erupt from the ground to a max height of 3m.
 The Hero can choose the exact height. 
 The rock walls occupy the edges of a hex; a rock wall cannot cut through a hex.
@@ -556,10 +556,10 @@ The rock wall could imprison a target by building a wall along all sides of a he
 ",15,11,6,The Hero can raise the earth up to him to create rock walls.
 Rockwall,,,2,4,6,8,10,15,Size,,,,,,,
 Rockwall,,,3,7,10,100,100,100,Range,,,,,,,
-Shoot Energy,,Primary Action,1d4+1,1d4+2,1d4+3,1d6+5,2d6+6,4d6+6,DMG,,,,25,18,10,
+Shoot Energy,,Action,1d4+1,1d4+2,1d4+3,1d6+5,2d6+6,4d6+6,DMG,,,,25,18,10,
 Fireblast & Fireballz,,,,,,,,,,,,Grants Fireblast & Fireballz,25,18,10,The Hero shoots fire
-Fireblast,,Primary Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,DMG (E),,,Single Target,20,14,8,The Hero shoots a single blast of fire
-Fireballz,,Primary Action,1d4-1,1d4,1d4+1,1d4+1,1d6,1d6,DMG (E),,,The number of fireballs is defined by rank. There are no restrictions on how the Hero designates each fireball. The Hero can send each fireball to a different target. or multiple fireballs to a single target. He must declare all at once and then make the roll for each,20,14,8,The Hero can shoot multiple fireballz
+Fireblast,,Action,1d4,1d6,1d6+2,2d6,2d6+3,3d6+5,DMG (E),,,Single Target,20,14,8,The Hero shoots a single blast of fire
+Fireballz,,Action,1d4-1,1d4,1d4+1,1d4+1,1d6,1d6,DMG (E),,,The number of fireballs is defined by rank. There are no restrictions on how the Hero designates each fireball. The Hero can send each fireball to a different target. or multiple fireballs to a single target. He must declare all at once and then make the roll for each,20,14,8,The Hero can shoot multiple fireballz
 Fireballz,,,2,2,2,3,3,5,# of Fireballzzz,,,,,,,
 Slimy Skin,,Passive,,,,,,,,,,+2 AGI Escape checks,2,,,
 Snake-like Body,,Passive,,,,,,,,,,"Snake Wrap Grapple
@@ -567,7 +567,7 @@ Snake-like Body,,Passive,,,,,,,,,,"Snake Wrap Grapple
 +3 STR Grapple Bonus
 Hero cannot pass for a human without a disguise of sorts
 ",5,,,The hero's torso is like a snake I guess?
-Grapple Snake Wrap,,Primary Action,,,,,,,,,,"ATK +5
+Grapple Snake Wrap,,Action,,,,,,,,,,"ATK +5
 Crushing damage (d4 Str Mod) when maintaining hold
 ",5,,,
 Soar,,Move,2,4,5,6,7,8,Movement,,,"Using Soar puts you in a Hovering state
@@ -580,7 +580,7 @@ Hover is deactivated upon KO.
 Passive. Near Future & Far Future Soothsaying,,,,,,,,,,,,,35,25,14,
 Passive Soothsaying,,Passive,3,7,12,13,15,25,Initiative Bonus,,,,15,11,6,The Hero can see moments into the future
 Passive Soothsaying,,,0,1,1,1,2,3,ATK/EL,,,,,,,
-Near Future Soothsaying,,Primary Action - Channel,90,70,60,50,40,25,DC,,,"Start-up: 0i
+Near Future Soothsaying,,Channel,90,70,60,50,40,25,DC,,,"Start-up: 0i
 Cooldown: 0i
 Following effectuation of the action:
 Roll 1d100
@@ -591,7 +591,7 @@ Hero can continue rolling without stacking.
 Subsequent rolls require additional Channeled Actions.
 If the outcome of the roll exceeds 100. the Hero suffers a -1 Global Penalty until he rests.
 The Hero sees too great or too worrisome of a vision.",15,11,6,
-Far Future Soothsaying,,Primary Action - Channel,0,10,20,30,40,60,DC Buff,,,"Action - Channel
+Far Future Soothsaying,,Channel,0,10,20,30,40,60,DC Buff,,,"Channel
 Start-up: 10i
 Cooldown: 0i
 The Hero seeks out a vision; seeking information into the past. present. or future. 
@@ -625,7 +625,7 @@ DS expires at the conclusion of the instance in which it effectuated
 Physical and Elemental damage only
 Only afffects the hero using the power"
 Targeted DS,,,10,15,20,25,30,45,KBR Bonus,,,,,,,
-Torpor,,Primary Action - Channel,,,,,,,,,,"The Hero enters a near lifeless state.
+Torpor,,Channel,,,,,,,,,,"The Hero enters a near lifeless state.
 While in this state the Hero appears dead.
 Hero can survive for one week in this state.
 Startup: 1 Round
@@ -646,7 +646,7 @@ Fail: Take Venom damage.
 Venom ignores DS. HP Shields. and affects the targets HP directly.
 ",10,,,
 Venom,,,2,3,5,10,15,20,DC,,,,,,,
-Vine Whip,,Primary Action,7,9,11,13,15,20,Escape DC,,,"On hit. Melee Damage + Tiny Object Mod
+Vine Whip,,Action,7,9,11,13,15,20,Escape DC,,,"On hit. Melee Damage + Tiny Object Mod
 Hit can Bind target to the ground. restricted grounded movement
 Escape DC defined by Rank
 DC Stacks with subsequent hits
@@ -657,19 +657,19 @@ The Hero can hold one end of the Vine freely. allowing the Hero to Vine Whip a t
 ",20,14,8,Combination of Spider-Man. Indiana Jones. and a gardener who found a long vine in his yard.
 Vine Whip,,,5,10,10,15,15,20,Range,,,,,,,
 Vine Whip,,,,,,,,,,,,,,,,
-Vine Movement,,Primary Action/Move,4,6,7,8,9,10,Distance,,,"The Hero can swing around with his Vines.
+Vine Movement,,Action/Move,4,6,7,8,9,10,Distance,,,"The Hero can swing around with his Vines.
 Requires an Action to initiate and Movement to continue
 Distance is defined by rank
 Vertical Movement upwards counts as 2m for every 1m moved
 GM should use common sense approach to answering “are there enough objects for the player to continually swing?”
 When in doubt. follow Vine Whip Range
 ",,,,
-WIld Growth,,Primary Action,Single Hex,2,3,4,5,8,Radius,,,"Ranged. Radial AoE. The Hero selects the Epicenter.
+WIld Growth,,Action,Single Hex,2,3,4,5,8,Radius,,,"Ranged. Radial AoE. The Hero selects the Epicenter.
 Hero transforms Hexes into overgrown vegetation. 
 Hexes transformed are considered Rugged Terrain
 1HP per Hex
 ",20,TBD,TBD,
-Special Vegetation,,Primary Action,,,,,,,,,,"The Hero can turn any number of Wild Growth hexes into Special Vegetation.
+Special Vegetation,,Action,,,,,,,,,,"The Hero can turn any number of Wild Growth hexes into Special Vegetation.
 Hero must declare the specific Vegetation that will be growing.
 Should the Hero wish to grow a different Special Vegetation he must use another Action.
 5HP per Hex
@@ -725,7 +725,7 @@ Penatrating Gaze,,Passive,,,,,,,,,,See through 1m of any material,10,,,The Hero 
 Super STR,,,,,,,,,See Stat/Universal,,,SD controls STR,45,32,18,
 Super AGI,,,,,,,,,See Stat/Universal,,,SD controls AGI,45,32,18,
 Super CON,,,,,,,,,See Stat/Universal,,,SD controls CON,45,32,18,
-Shoot Lightning,,Grants Lightning Bolt & Charge,,,,,,,,,,,,,,
+Shoot Lightning,,,,,,,,,,,,,,,,
 Lightning Bolt,,Action,1d4,1d6,1d4x2,1d6x2,1d6x3,1d6x4,DMG,,,Range: 50m,25,18,10,
 Lightning Bolt,,,0,1,2,2,3,4,ATK Bonus,,,,20,14,8,
 Charge,,Action,0,1,2,2,3,3,Lightning Bolt +ATK,,,"So long as the Hero has at least 1 Amp he is considered “Charged”
