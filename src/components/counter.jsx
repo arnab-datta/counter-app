@@ -49,15 +49,17 @@ class Counter extends Component {
             >
               <i className="fa fa-trash-o" aria-hidden="true" />
             </button>
-            <input type="text" className="form-control d-inline w-50 m-2 description" placeholder="Description">
+            <input type="text" className="form-control d-inline w-50 m-2 description"
+                   placeholder="Description"
+                   value={this.state.description}
+                   onChange={(evt) => this.handleDescriptionChange(evt)}
+            >
             </input>
             <button
               className={`btn d-inline 
                 ${ !this.state.disabled ? "btn-primary" : "" } 
                 ${ this.state.disabled ? "btn-light" : "" }`
               }
-              value={this.state.description}
-              onChange={(evt) => this.handleDescriptionChange(evt)}
             >
               Save
             </button>
