@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Counter */
+.description{
+  width: 40%;
+  background: #F1F2F3!important;
+  border-radius: 6px;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #787F85;
+}

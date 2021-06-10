@@ -9,7 +9,8 @@ class Counters extends Component {
       onDelete,
       onDecrement,
       counters,
-      onRestart
+      onRestart,
+      onDescriptionChange
     } = this.props;
     return (
       <div>
@@ -34,6 +35,7 @@ class Counters extends Component {
             onIncrement={onIncrement}
             onDecrement={onDecrement}
             onDelete={onDelete}
+            handleDescriptionChange={onDescriptionChange}
           />
         ))}
       </div>

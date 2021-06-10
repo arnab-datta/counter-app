@@ -5,10 +5,10 @@ import Counters from "./components/counters";
 class App extends Component {
   state = {
     counters: [
-      { id: 1, value: 0 },
-      { id: 2, value: 0 },
-      { id: 3, value: 0 },
-      { id: 4, value: 0 }
+      { id: 1, value: 0, description: '' },
+      { id: 2, value: 0, description: '' },
+      { id: 3, value: 0, description: '' },
+      { id: 4, value: 0, description: '' }
     ]
   };
 
@@ -45,6 +45,15 @@ class App extends Component {
     window.location.reload();
   };
 
+  handleDescriptionChange = (counter, desc) => {
+    const counters = [...this.state.counters];
+    const index = counters.indexOf(counter);
+    counters[index] = { ...counters[index] };
+    counters[index].description = desc;
+    this.setState({ counters });
+  };
+
+
   render() {
     return (
       <div>
@@ -59,6 +68,7 @@ class App extends Component {
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
             onRestart={this.handleRestart}
+            onDescriptionChange={this.handleDescriptionChange}
           />
         </main>
       </div>
