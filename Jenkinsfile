@@ -12,7 +12,7 @@ pipeline {
         
         sh "docker build -t jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME ." 
         //sh "docker run -dp 80:80 jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME"
-        sh "docker push jyoti26/calculator:$BUILD_ID-$BRANCH_NAME"
+        sh "docker push jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME"
       }
     }
     stage('Creating Deployment') {
@@ -22,10 +22,10 @@ pipeline {
                 
                 if [[ $GIT_BRANCH == "namespace2" ]]
                 then
-                    kubectl set image deployment/jyoti nginx=jyoti26/calculator:$BUILD_ID-$BRANCH_NAME -n $BRANCH_NAME
+                    kubectl set image deployment/jyoti nginx=jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME -n $BRANCH_NAME
                 elif [[ $GIT_BRANCH == "master" ]]
                 then
-                    kubectl set image deployment/jyoti nginx=jyoti26/calculator:$BUILD_ID-$BRANCH_NAME -n namespace2
+                    kubectl set image deployment/jyoti nginx=jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME -n namespace2
                 fi         
             '''
       }
