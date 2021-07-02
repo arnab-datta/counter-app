@@ -25,7 +25,7 @@ pipeline {
                     kubectl set image deployment/jyoti nginx=jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME -n $BRANCH_NAME
                 elif [[ $GIT_BRANCH == "master" ]]
                 then
-                    kubectl set image deployment/jyoti nginx=jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME -n namespace2
+                    kubectl set image deployment/jyoti nginx=jyoti26/counter-app:$BUILD_ID-$BRANCH_NAME -n namespace1
                 fi         
             '''
       }
