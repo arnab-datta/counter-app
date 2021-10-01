@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Counter from "./counter";
+import Total from "./total";
 
 class Counters extends Component {
   render() {
@@ -9,6 +10,7 @@ class Counters extends Component {
       onDelete,
       onDecrement,
       counters,
+      total,
       onRestart
     } = this.props;
     return (
@@ -36,6 +38,9 @@ class Counters extends Component {
             onDelete={onDelete}
           />
         ))}
+        <Total
+          value={total}
+        />
       </div>
     );
   }

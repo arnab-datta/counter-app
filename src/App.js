@@ -9,7 +9,8 @@ class App extends Component {
       { id: 2, value: 0 },
       { id: 3, value: 0 },
       { id: 4, value: 0 }
-    ]
+    ],
+    total: 0
   };
 
   handleIncrement = counter => {
@@ -17,7 +18,9 @@ class App extends Component {
     const index = counters.indexOf(counter);
     counters[index] = { ...counters[index] };
     counters[index].value++;
-    this.setState({ counters });
+    let total = this.state.total;
+    total++;
+    this.setState({ counters, total });
   };
 
   handleDecrement = counter => {
@@ -25,7 +28,9 @@ class App extends Component {
     const index = counters.indexOf(counter);
     counters[index] = { ...counters[index] };
     counters[index].value--;
-    this.setState({ counters });
+    let total = this.state.total;
+    total--;
+    this.setState({ counters, total });
   };
 
   handleReset = () => {
@@ -33,12 +38,17 @@ class App extends Component {
       c.value = 0;
       return c;
     });
-    this.setState({ counters });
+    let total = 0;
+    this.setState({ counters, total });
   };
 
   handleDelete = counterId => {
     const counters = this.state.counters.filter(c => c.id !== counterId);
-    this.setState({ counters });
+    let total = 0;
+    counters.forEach(c => {
+      total = total + c.value;
+    })
+    this.setState({ counters, total });
   };
 
   handleRestart = () => {
@@ -54,6 +64,7 @@ class App extends Component {
         <main className="container">
           <Counters
             counters={this.state.counters}
+            total={this.state.total}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
