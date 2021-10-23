@@ -5,12 +5,12 @@ class Counter extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col-md-1">
+          <div className="">
             <span style={{ fontSize: 24 }} className={this.getBadgeClasses()}>
               {this.formatCount()}
             </span>
           </div>
-          <div className="col-md-4">
+          <div className="">
             <button
               className="btn btn-secondary"
               onClick={() => this.props.onIncrement(this.props.counter)}

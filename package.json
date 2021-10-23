@@ -8,16 +8,18 @@
   },
   "homepage": "https://arnab-datta.github.io/counter-app",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.15.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "2.1.8",
-    "typescript": "^3.4.2"
+    "typescript": "^3.9.10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,5 +33,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }

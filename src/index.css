@@ -6,9 +6,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main__wrap {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 50px 0px;
+  justify-content: center;
+}
+
+.card__box {
+  padding: 50px 10px;
+  border: 10px solid #7fd8e6;
+  border-radius: 12px;
+  background-color: #ddf2f5;
+}
+.row {
+  justify-content: center !important;
+}
+.navbar {
+  justify-content: center !important;
+  background: transparent !important;
+}
+.btn {
+  cursor: pointer !important;
+}
+.badge {
+  width: 70px !important;
 }
