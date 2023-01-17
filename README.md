@@ -6,7 +6,7 @@
 
 ## Live URL :-
 
-> [Counter App](https://obscure-waters-60500.herokuapp.com)
+> [Counter App](https://arnab-datta.github.io/counter-app/)
 
 **OR your can do the following to run in your local machine**
 
