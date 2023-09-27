@@ -8,13 +8,16 @@
   },
   "homepage": "https://arnab-datta.github.io/counter-app",
   "dependencies": {
+    "@rescript/core": "^0.5.0",
+    "@rescript/react": "^0.11.0",
     "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^18",
+    "react-dom": "^18",
     "react-scripts": "2.1.8",
+    "rescript": "^10.1.4",
     "typescript": "^3.9.10"
   },
   "scripts": {
@@ -23,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "res:dev": "rescript build -w",
+    "res:build": "rescript"
   },
   "eslintConfig": {
     "extends": "react-app"
